@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title> 339 Project 02</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav>
+		<a href="styleGuide.html"> Style Guide</a>
+		<a href="wireflows.html"> Wireflows</a>
+		<a href="citation.html"> Citation</a>
+	</nav>
+
+	<hr>
+
+	<h1> Style Guide</h1>
+	<nav>
+		<p> Go to:
+			<a href="#interactiveElements"> Interactive Elements</a>
+			<a href="#textStyling"> Text Styling</a>
+			<a href="#combinedElements"> Combined Elements</a>
+		</p>
+	</nav>
+
+	<hr>
+
+	<section id="interactiveElements">
+
+		<section>
+
+			<h2>In-text Link</h2>
+
+			<h3>CSS selector:</h3>
+			<p>.in_text</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;p&gt; A &lt;a class="in_text" href=""&gt;link in a paragraph.&lt;/a&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<p>A <a class="in_text" href="">link</a> in a paragraph.</p>
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Navigation Button</h2>
+
+			<h3>CSS selector:</h3>
+			<p>.nav_button</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;a class="nav_button" href=""&gt; Navigation Button &lt;/a&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<a class="nav_button" href="">Navigation Button</a>
+
+		</section>
+		<hr>
+		
+		<section>
+
+			<h2>Submit and Reset Button</h2>
+
+			<h3>CSS selector:</h3>
+			<p>.input_button</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;input class="input_button" type="submit" value="Submit"&gt;</code>
+			<code>&lt;input class="input_button" type="reset" value="Reset"&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<input class="input_button" type="submit" value="Submit">
+			<input class="input_button" type="reset" value="Reset">
+			<br>
+			<br>
+			<p>
+				Referenced from: https://www.w3schools.com/html/html_form_input_types.asp
+			</p>
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Text Input Field</h2>
+
+			<h3>CSS selector:</h3>
+			<p>.text_field</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;input class="text_field" type="text" value="text"&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<input class="text_field" type="text" value="text">
+			<br>
+			<br>
+			<p>
+				Referenced from: https://www.w3schools.com/tags/tag_input.asp
+			</p>
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Label</h2>
+
+			<h3>CSS selector:</h3>
+			<p>label</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;label&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<label for="1"> 1</label>
+			<input type="radio" name="number" id="1" value="1"><br>
+			<label for="2"> 2</label>
+			<input type="radio" name="number" id="2" value="2"><br>
+			<label for="3"> 3</label>
+			<input type="radio" name="number" id="3" value="3">
+
+			<br>
+			<br>
+			<p>
+				Referenced from: https://www.w3schools.com/tags/tag_label.asp
+			</p>
+
+		</section>
+
+	</section>
+	<hr>
+
+	<section id="textStyling">
+
+		<section>
+
+			<h2>Three Levels of Headings</h2>
+
+			<h3>CSS selector:</h3>
+			<p>h1</p>
+			<p>h2</p>
+			<p>h3</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;h1&gt;Heading1&lt;h1&gt;</code>
+			<code>&lt;h2&gt;Heading2&lt;h2&gt;</code>
+			<code>&lt;h3&gt;Heading3&lt;h3&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<h1>Heading1</h1>
+			<h2>Heading2</h2>
+			<h3>Heading3</h3>
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Paragraph</h2>
+
+			<h3>CSS selector:</h3>
+			<p>p</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+
+			<h3>Rendered element:</h3>
+			<p>This is a paragraph.</p>
+
+		</section>
+		<hr>
+		<section>
+
+			<h2>Bulletted List</h2>
+
+			<h3>CSS selector:</h3>
+			<p>ul</p>
+			<p>li</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;ul&gt; 
+				<br>&lt;li&gt;List element 1&lt;/li&gt;
+				<br>&lt;li&gt;List element 2&lt;/li&gt;
+				<br> 
+				&lt;/ul&gt;
+			</code>
+
+
+			<h3>Rendered element:</h3>
+			<ul>
+				<li>List element1</li>
+				<li>List element2</li>
+			</ul>
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Numbered Lists</h2>
+
+			<h3>CSS selector:</h3>
+			<p>ol</p>
+			<p>li</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;ol&gt; 
+				&lt;li&gt;List element1&lt;/li&gt;
+				&lt;li&gt;List element2&lt;/li&gt; 
+				&lt;/ol&gt;
+			</code>
+
+
+			<h3>Rendered element:</h3>
+			<ol>
+				<li>List element1</li>
+				<li>List element2</li>
+			</ol>
+
+		</section>
+
+	</section>
+	<hr>
+
+	<section id="combinedElements">
+
+		<section>
+
+			<h2>Main Navigation</h2>
+
+			<h3>CSS selector:</h3>
+			<p>nav</p>
+			<p>optional ways: .main_nav, a </p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;nav&gt; <br>
+				&lt;a class="main_nav" href="home.html&gt; Home &lt;/a&gt;<br>
+				&lt;/nav&gt;
+			</code>
+
+			<h3>Rendered element:</h3>
+			<nav>
+				<a class="main_nav" href=""> Home </a>
+			</nav>
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Product/Service Listing</h2>
+
+			<h3>CSS selector:</h3>
+			<p>.service_listing</p>
+
+			<h3>Sample code:</h3>
+			<code>&lt;ul&gt;<br>
+				&lt;li&gt;Service Name1&lt;/li&gt;<br>
+				&lt;li&gt;Service Name2&lt;/li&gt;<br>
+				&lt;li&gt;Service Name3&lt;/li&gt;<br>
+				&lt;/ul&gt;
+			</code>
+
+			<h3>Rendered element:</h3>
+			<ul>
+				<li>Service Name1</li>
+				<li>Service Name3</li>
+				<li>Service Name1</li>
+			</ul>
+
+		</section>
+		<hr>
+
+		<!-- to be done -->
+		<section>
+
+			<h2>Website Grid Structure</h2>
+
+			<h3>Rendered element:</h3>
+			<img src="img/grid.png" alt="website grid structure">
+
+		</section>
+		<hr>
+
+		<section>
+
+			<h2>Color Swatches</h2>
+
+			<h3>Rendered element:</h3>
+
+			<div class="container">
+				<div class = "block1">
+					<div class="wrapper"></div>
+				</div>
+				<div class = "block2">
+					<div class="wrapper"></div>
+				</div>
+				<div class = "block3">
+					<div class="wrapper"></div>
+				</div>
+				<div class = "block4">
+					<div class="wrapper"></div>
+				</div>
+				<div class = "block5">
+					<div class="wrapper"></div>
+				</div>
+			</div>
+
+		</section>
+
+	</section>
+
+</body>
