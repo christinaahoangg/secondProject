@@ -1,0 +1,164 @@
+<doctype html>
+
+<html>
+
+<head>
+	<title>P01: Style Guide</title>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/styleguide-main.css"
+</head>
+
+
+<body>
+	<h1>P01: Style Guide</h1>
+
+	<nav class="nav-index">
+			<a href="styleguide.html">Style Guide</a> 
+			<a href="wireframes.html">Wireframes</a> 
+			<a href="citations.html">Citations</a>
+	</nav>
+
+	<nav>
+		<p>Go to:
+			<a href="#interactive-elements">Interactive Elements</a>,
+			<a href="#text-elements">Text Styling</a>,
+	 		<a href="#combined-elements">Combined Elements</a>
+		</p> <!-- citation: IAT339 Sample Style Guide Template html -->
+	</nav>
+
+
+	<!--Start of section interactive elements -->
+	<section id="interactive-elements">  
+
+		<h2>Interactive Elements</h2>
+
+		<h3>In-text Link</h3>
+		<p><strong>CSS selector: </strong>.in-text-link</p> 
+		<p><strong>Sample HTML code: </strong>&lt;a class="in-text-link" href="https://www.google.com/" target="_blank"&gt;Link&lt;a&gt;</p>
+		<p><strong>Rendered code: </strong> <a class="in-text-link" href="https://www.google.com/" target="_blank">Link</a></p>
+
+		<h3>Navigation Button</h3>
+		<p><strong>CSS selector: </strong>.button-nav</p>
+		<p><strong>Sample HTML code: </strong>&lt;a class="button-nav" href="https://www.google.com/"&gt;Navigation Button&lt;a&gt;</p>
+		<p><strong>Rendered code: </strong> <a class="button-nav" href="https://www.google.com/" target="_blank">NAVIGATION BUTTON</a></p>
+
+		<h3>Submit and Reset Button for Forms</h3>
+		<p><strong>CSS selector: </strong>.button-submit-primary</p>
+		<p><strong>Sample HTML code: </strong>&lt;button class="button-submit-primary" type="button"&gt;Submit&lt;/button&gt;</p>
+		<p><strong>Rendered code: </strong><button class="button-submit-primary" type="button">SUBMIT BUTTON</button>	<button class="button-submit-secondary" type="button">SUBMIT BUTTON</button></p>
+
+		<h3>Text Input Field and a Label</h3>
+		<p><strong>CSS selector: </strong>.text-input</p>
+		<p><strong>Sample HTML code: </strong>&lt;input class="text-input" type="text" placeholder="Email address"&gt; 
+		<p><strong>Rendered code: </strong><input class="text-input" type="text" placeholder="Email address"></p>  <!-- citation: https://www.m2osw.com/label-inside-input-element -->
+
+	</section> <!--end of section interactive elements -->
+
+
+
+	<!--Start of section interactive elements -->
+	<section id="text-elements">
+
+		<h2>Text Styling</h2>
+
+		<h3>Three Levels of Headings</h3>
+		<p><strong>CSS selector: </strong>.heading-one</p>
+		<p><strong>Sample CSS code: </strong>.heading-one { color: rgb(43,43,43); font-size: 2.5em; }</p>
+		<p class="heading-one">Heading one</p>
+		<br>
+		<p><strong>CSS selector: </strong>.heading-two</p>
+		<p><strong>Sample CSS code: </strong>.heading-two { color: rgb(43,43,43); font-size: 2em; }</p>
+		<p class="heading-two">Heading two</p>
+		<br>
+		<p><strong>CSS selector: </strong>.heading-three</p>
+		<p><strong>Sample CSS code: </strong>.heading-three { color: rgb(37,101,42); font-size: 1.5em; }</p>
+		<p class="heading-three">Heading three</p>
+
+		<h3>A Paragraph</h3>
+		<p><strong>CSS selector: </strong>p</p>
+		<p><strong>Sample CSS code: </strong>p { color: rgb(43,43,43); font-size: 1em; font-weight: lighter; }</p>
+		<p class="paragraph">Paragraph text style.</p>
+
+		<h3>Bulletted List</h3>
+		<p><strong>CSS selector: </strong>ul</p>
+		<p><strong>Sample CSS code: </strong>ul { list-style-type: none; }</p>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+
+		<h3>Numbered List</h3>
+		<p><strong>CSS selector: </strong>ol</p>
+		<p><strong>Sample CSS code: </strong>ol { list-style-type: none; counter-reset: number; max-width: 30rem; display: flex; flex-wrap: wrap; } <br>
+			ol li { counter-increment: number; width: 50%; } <br>
+			ol li::before { content: counter(number) "."; padding-right: 2em; color: rgb(37,101,42); font-weight: bold; }</p>
+
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+
+	</section>  <!--end of section text elements -->
+
+
+
+	<!--Start of section combined elements -->
+	<section id="combined-elements">
+
+		<h2>Combined Elements</h2>
+
+		<h3>Main Navigation</h3>
+		<p><strong>CSS selector: </strong>.nav-main</p>
+		<p><strong>Sample HTML code: </strong>&lt;nav class="nav-main"&gt;&lt;a href="#1"&gt;HOW IT WORKS&lt;/a&gt;&lt;a href="#2"&gt;WHAT'S ON THE MENU&lt;/a&gt;&lt;/nav&gt;
+		<p><strong>Sample CSS code: </strong>.nav-main { background-color: rgb(37,101,42); padding: 1.25em 3.75em; } <br>
+			.nav-main a { color: white; text-decoration: none; padding: 1.25em 3.75em; } <br>
+		.nav-main a:hover, .nav-main a:active { background-color: rgb(17,68,21); } </p>
+		<br><nav class="nav-main">
+			<a href="#1">HOW IT WORKS</a> 
+			<a href="#2">WHAT'S ON THE MENU</a> 
+			<a href="#3">PRICING</a>
+			<a href="#4">FAQS</a> 
+			<a href="#5">ABOUT US</a>  
+		</nav>
+
+		<h3>Product Listing</h3> <!-- citation: https://www.w3schools.com/howto/howto_css_product_card.asp -->
+		<p><strong>CSS selector: </strong>.product</p>
+		<p><strong>Sample HTML code: </strong>&lt;div class="product"&gt;&lt;h2&gt;Classic Plan&lt;/h2&gt;&lt;img src="Images/placeholder.jpg" style="width:100%"&gt;&lt;p class="price"&gt;Product description here.&lt;/p&gt;&lt;p&gt;&lt;button class="button-submit-primary"&gt;SELECT THIS PLAN&&lt;/button&gt;lt;/p&gt;
+		<p><strong>Sample CSS code: </strong>.product { max-width: 25em; border-style: solid; border-width: 1px; border-radius: 0.75em; border-color: rgb(37,101,42); } <br>
+			.product h2 { background-color: rgb(37,101,42); text-align: center; color: white; font-weight: normal; margin-top: 0; padding: 0.35em 0; border-top-left-radius: 0.45em; border-top-right-radius: 0.45em; } <br>
+			.product p { text-align: center; padding: 0 1.25em; } <br>
+			.price { font-weight: bold; color: rgb(37,101,42); font-size: 1.75em; } <br>
+			.product button { margin-top: 2em; margin-bottom: 1.5em; padding: 0.75em 7em; font-size: 1em; } </p>
+		<br><div class="product">
+			<h2>Classic Plan</h2>
+			<img src="Images/placeholder.jpg" style="width:100%">
+			<p>Enjoy fresh pre-cut and pre-measured ingredients with exciting flavours and variety.</p>
+			<p class="price">$11.44/serving</p>
+			<p><button class="button-submit-primary">SELECT THIS PLAN</button></p>
+		</div>
+
+		<h3>Website Grid Structure</h3>
+		<p><strong>CSS selector: </strong>.grid and .grid-item</p>
+		<p><strong>Sample HTML code: </strong>&lt;div class="grid"&gt;&lt;div class="grid-item"&gt;1&lt;/div&gt;&lt;div class="grid-item"&gt;2&lt;/div&gt;&lt;/div&gt;</p>
+		<p><strong>Sample CSS code: </strong>.grid { display:-webkit-flex; display:-ms-flex; display: flex; -webkit-flex: wrap; -ms-flex: wrap; flex-wrap: wrap; justify-content: space-around; } <br>
+			.grid-item { height: 200px; background-color: rgb(221,245,250); flex: 1 1 auto; flex-direction: row; margin: 3em; } </p>
+		<div class="grid">
+			<div class="grid-item">1</div>
+			<div class="grid-item">2</div>
+		</div>
+
+
+		<h3>Website Colour Swatches</h3>
+		<p class="colour-primary"><strong>Primary Colour</strong> 
+			<br>rgb(37,101,42)</p>
+		<p class="colour-secondary"><strong>Secondary Colour</strong> 
+			<br>rgb(17,68,21)</p>
+		<p class="colour-text"><strong>Text Colour</strong> 
+			<br>rgb(43,43,43)</p>
+
+</body>
+
+</html>
