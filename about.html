@@ -1,4 +1,4 @@
-<doctype html>
+<!DOCTYPE html>
 
 <html>
 
@@ -6,35 +6,95 @@
 	<title>P02: About Us</title>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="CSS/main.css">
 	<link rel="stylesheet" href="CSS/fonts.css">
 </head>
 
 
 <body>
-	
-	<!-- citation: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-	<header>
-		<h1><a href="index.html">FreshEats</a></h1>
 
-		<nav>
-			<ul class="nav-items">
-				<li><a href="how-it-works.html">HOW IT WORKS</a></li>
-				<li><a href="menu.html">MENU</a></li>
-				<li><a href="pricing.html">PRICING</a></li>
-				<li><a href="events.html">EVENTS</a></li> 
-				<li><a href="about.html">ABOUT US</a></li> 
-			</ul>
-		</nav>
+	<div class="header"> 
+		<!-- citation: https://stackoverflow.com/questions/42397706/h1-and-nav-on-the-same-line -->
+		<!-- citation: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+		<header>
+			<h1><a href="index.html">FreshEats</a></h1>
 
-		<div class="primary-buttons">
-		<a href="login.html"><button class="login-button">LOGIN</button></a>
-		<a href="join.html"><button class="join-button" >JOIN</button></a>
+			<nav>
+				<ul class="nav-items">
+					<li><a href="how-it-works.html">HOW IT WORKS</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="pricing.html">PRICING</a></li>
+					<li><a href="events.html">EVENTS</a></li> 
+					<li><a href="about.html">ABOUT US</a></li> 
+				</ul>
+			</nav>
+
+			<div class="primary-buttons">
+				<a href="login.html"><button class="login-button">LOGIN</button></a>
+				<a href="join.html"><button class="join-button" >JOIN</button></a>
+			</div>
+		</header>
+
+	</div>
+
+	<!-- <button class="back" type="button">&#8636</button> -->
+	<!-- citation: https://www.toptal.com/designers/htmlarrows/arrows/-->
+
+	<div class="about-section1">
+		<h1>About Us</h1>
+
+		<div class="sub-nav">
+			<nav>
+				<ul>
+					<li><a href=".mission"> Our Mission </a></li>
+					<li><a href=".contact"> Contact Us </a></li>
+				</ul>
+			</nav>
 		</div>
-	</header>
 
+	</div>
+
+	<div class="about-section2">
+
+		<div class="mission-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at fringilla justo, et sodales arcu. Ut volutpat a dui nec tincidunt. Nam luctus nisl in viverra aliquet. Donec non magna tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla orci urna, lobortis eget vulputate eu, rhoncus a nulla. Maecenas sed
+			eleifend ligula, eget venenatis purus. 
+
+			In nec tristique turpis. Aenean eleifend ante id felis feugiat, eu eleifend metus mollis. Vestibulum cursus congue tincidunt. Integer diam nisi, pulvinar eu ante sed, rhoncus vestibulum tellus. Fusce sed viverra diam. Phasellus eu viverra metus.
+			</p>
+		</div>
+	</div>
+
+	<div class="about-section3">
+
+		<div class="contact-content">
+			<ul>
+				<li>
+					<h3>Name</h3>
+					<input class="text-input" type="text" placeholder="Name">
+				</li>
+				<li>
+					<h3>Email</h3>
+					<input class="text-input" type="text" placeholder="Email">
+				</li>
+				<li>
+					<h3>Phone</h3>
+					<input class="text-input" type="text" placeholder="Phone">
+				</li>
+				<li>
+					<h3>Leave us a message</h3>
+					<input class="text-input" id="message" type="text" placeholder="Message">
+				</li>
+			</ul>
+
+			<button class="send" type="button"> Send </button>
+		</div>
+	</div>
+
+	<footer>Copright reserved by June & Christina</footer>
 
 </body>
-	
+
 
 </html>
