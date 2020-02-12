@@ -6,37 +6,44 @@
 	<title>P02: About Us</title>
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="CSS/main.css">
 	<link rel="stylesheet" href="CSS/fonts.css">
+	<link rel="stylesheet" href="CSS/flexbox.css">
+
+	<script src="https://kit.fontawesome.com/a70479ac06.js" crossorigin="anonymous"></script>
+
 </head>
 
 
 <body>
 
-	<div class="header"> 
-		<!-- citation: https://stackoverflow.com/questions/42397706/h1-and-nav-on-the-same-line -->
-		<!-- citation: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-		<header>
-			<h1><a href="index.html">FreshEats</a></h1>
+	<!-- citation: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+	<header class="header">
 
-			<nav>
-				<ul class="nav-items">
-					<li><a href="how-it-works.html">HOW IT WORKS</a></li>
-					<li><a href="menu.html">MENU</a></li>
-					<li><a href="pricing.html">PRICING</a></li>
-					<li><a href="events.html">EVENTS</a></li> 
-					<li><a href="about.html">ABOUT US</a></li> 
-				</ul>
-			</nav>
+		<span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
 
-			<div class="primary-buttons">
-				<a href="login.html"><button class="login-button">LOGIN</button></a>
-				<a href="join.html"><button class="join-button" >JOIN</button></a>
-			</div>
-		</header>
+		<h1><a href="index.html" class="logo">FreshEats</a></h1>
 
-	</div>
+		<nav>
+			<ul class="nav-items" id="js-menu">
+				<li><a href="how-it-works.html" class="box-item-nav">HOW IT WORKS</a></li>
+				<li><a href="menu.html" class="box-item-nav">MENU</a></li>
+				<li><a href="pricing.html" class="box-item-nav">PRICING</a></li>
+				<li><a href="events.html" class="box-item-nav">EVENTS</a></li> 
+				<li><a href="about.html" class="box-item-nav">ABOUT US</a></li> 
+			</ul>
+		</nav>
+
+		<div class="primary-buttons">
+			<a href="login.html"><button class="join-button nav-button">LOGIN</button></a>
+			<a href="join.html"><button class="join-button nav-button" >JOIN</button></a>
+		</div>
+
+	</header>
 
 	<!-- <button class="back" type="button">&#8636</button> -->
 	<!-- citation: https://www.toptal.com/designers/htmlarrows/arrows/-->
@@ -60,7 +67,7 @@
 		<div class="column about-content">
 
 			<div class="mission">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at fringilla justo, et sodales arcu. Ut volutpat a dui nec tincidunt. Nam luctus nisl in viverra aliquet. Donec non magna tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla orci urna, lobortis eget vulputate eu, rhoncus a nulla. Maecenas sed eleifend ligula, eget venenatis purus. 
+				<p class="mission-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at fringilla justo, et sodales arcu. Ut volutpat a dui nec tincidunt. Nam luctus nisl in viverra aliquet. Donec non magna tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla orci urna, lobortis eget vulputate eu, rhoncus a nulla. Maecenas sed eleifend ligula, eget venenatis purus. 
 
 					In nec tristique turpis. Aenean eleifend ante id felis feugiat, eu eleifend metus mollis. Vestibulum cursus congue tincidunt. Integer diam nisi, pulvinar eu ante sed, rhoncus vestibulum tellus. Fusce sed viverra diam. Phasellus eu viverra metus.
 				</p>
