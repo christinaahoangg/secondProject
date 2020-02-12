@@ -195,3 +195,107 @@ figcaption {
 	margin-left: 80px;
 	margin-bottom: 1.5em;
 }
+
+
+/* HOW IT WORKS */
+
+footer{
+	text-align:center;
+	padding:1em;
+	color:white;
+	background-color: rgb(239,240,224);
+}
+
+.how-section1{
+	margin-top: 3em;
+	margin-left: 10%;
+}
+
+.how-section1 h2{
+	max-width: 500px;
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 0;
+	position: absolute;
+	z-index: 2;
+	margin-top: 1.5em;
+	width: 100%;
+	font-weight: 500;
+}
+
+.how-section1 ul{
+	list-style:none;
+}
+
+.how-section1 .how-content{
+	position: relative;
+	z-index: 1;
+	min-height: 450px;
+	min-width: 300px;
+	margin-left: 5rem;
+	background-color: rgb(239,240,224);
+	padding:5em;
+}
+
+/*How TO - Position Text Over an Image
+citation:https://www.w3schools.com/howto/howto_css_image_text.asp*/
+.how-section2{
+	position: relative;
+	text-align: left;
+	color: black;
+}
+
+.how-section2 .how-content{
+	position: absolute;
+	width:40%;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+}
+
+
+.how-section3 .column{
+	float:left;
+}
+
+.how-section3 .how-image{
+	width:60%;
+}
+
+.how-section3 .how-content{
+	width:40%;
+	padding:3.5em;
+}
+
+.how-section3:after {
+	content:"";
+	display:table;
+	clear:both;
+
+}
+
+
+.how-section4 .column{
+	float:left;
+}
+
+.how-section4 .how-image{
+	width:60%;
+}
+
+.how-section4 .how-content{
+	width:40%;
+	padding:3.5em;
+}
+
+.how-section4:after {
+	content:"";
+	display:table;
+	clear:both;
+
+}
+
+
+/* About */
+
+
