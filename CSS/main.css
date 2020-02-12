@@ -75,6 +75,11 @@ button {
 	transition: all 0.3s ease 0s;
 }
 
+.join-button {
+	padding: 0.6em 2em;
+	margin:0.2em;
+}
+
 button:hover, button:active, button:focus {
 	transition: background-color 0.35s ease-out;
 	background-color: rgb(129,156,75);
