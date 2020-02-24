@@ -167,77 +167,77 @@ figcaption {
 /* CREATE ACCOUNT PAGES */
 /* step progress bar citation: http://kodhus.com/newsite/step-progress-bar-css-only/ */
 .join-container {
-    width: 100%;
-    margin: 30px auto;
-    padding-bottom: 20px; 
-    text-align: center;
+	width: 100%;
+	margin: 30px auto;
+	padding-bottom: 20px; 
+	text-align: center;
 }
 
 .progress-bar {
-    counter-reset: step;
-    display: inline-block;
-    width: 800px;
- }
+	counter-reset: step;
+	display: inline-block;
+	width: 800px;
+}
 
 .progress-bar li {
-    list-style-type: none;
-    width: 20%;
-    float: left;
-    font-size: 12px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(205,218,177);
+	list-style-type: none;
+	width: 20%;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(205,218,177);
 }
 
 .progress-bar li:before {  /* the circle for each step */
-    width: 30px;
-    height: 30px;
-    content: counter(step);
-    counter-increment: step;
-    line-height: 30px;
-    border: 2px solid rgb(205,218,177);
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    background-color: white;
-    color: rgb(205,218,177);
+	width: 30px;
+	height: 30px;
+	content: counter(step);
+	counter-increment: step;
+	line-height: 30px;
+	border: 2px solid rgb(205,218,177);
+	display: block;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	border-radius: 50%;
+	background-color: white;
+	color: rgb(205,218,177);
 }
 
 .progress-bar li:after {  /* lines in between each step */
-    width: 100%;
-    height: 2px;
-    content: '';
-    position: absolute;
-    background-color: rgb(205,218,177);
-    top: 15px;
-    left: -50%;
-    z-index: -1;
+	width: 100%;
+	height: 2px;
+	content: '';
+	position: absolute;
+	background-color: rgb(205,218,177);
+	top: 15px;
+	left: -50%;
+	z-index: -1;
 }
 
 .progress-bar li:first-child:after {
-    content: none;
+	content: none;
 }
 
 .progress-bar li.active {  /* active: the step name */
-    color: rgb(129,156,75);
-    text-decoration: none;
+	color: rgb(129,156,75);
+	text-decoration: none;
 }
 
 .progress-bar li.active:before {  /* active: the circle for each step */
-    border-color: rgb(129,156,75);
-    background-color: rgb(129,156,75);
-    color: white;
+	border-color: rgb(129,156,75);
+	background-color: rgb(129,156,75);
+	color: white;
 }
 
 .progress-bar li.active + li:after {  /* active: lines in between each step */
-    background-color: rgb(129,156,75);
+	background-color: rgb(129,156,75);
 }
 
 .progress-bar li a {
-    text-decoration: none;
-  	color: rgb(129,156,75);
+	text-decoration: none;
+	color: rgb(129,156,75);
 }
 
 .create-account{
@@ -245,11 +245,11 @@ figcaption {
 }
 
 .create-account h2 {
-  	font-size: 20px;
-  	font-weight: 500;
-  	margin-top: 0;
-  	margin-bottom: 2em;
- }
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 2em;
+}
 
 .text-input{	/* text field input box */ 
 	background-color: white;
@@ -310,7 +310,7 @@ figcaption {
 
 /* citation for selection: https://css-tricks.com/almanac/selectors/s/selection/ */
 .cards-3::selection + .cards-3::after {
-    background-color: rgb(129,156,75);
+	background-color: rgb(129,156,75);
 }
 
 
@@ -334,18 +334,26 @@ figcaption {
 
 
 
+.back{
+	border: none;
+	border-radius: 5em;
+	transition: all 0.3s ease 0s;
+	margin-left:80px;
+	float:left;
+	max-width:100px;
+}
 
+.back:hover, .back:active, .back:focus {
+	transition: color 0.35s ease-out;
+	color: rgb(129,156,75);
+}
 
 
 h2{
-	max-width: 500px;
-	font-size: 20px;
-	font-weight: 400;
-	margin-top: 0;
-	position: absolute;
-	z-index: 2;
-	margin-top: 1.5em;
-	width: 100%;
+	max-width:450px;
+	font-size: 3rem;
+	margin-left:5rem;
+	padding-bottom: 2em;
 	font-weight: 500;
 }
 
@@ -359,162 +367,195 @@ footer{
 
 
 /* HOW IT WORKS */
-
-.how-section1{
-	margin-top: 3em;
-	margin-left: 10%;
+.how-main{
+	padding-left:50px;
+	padding-right:50px;
 }
 
-.how-section1 ul{
-	list-style:none;
+.how-section2 h3, .how-section3 h3, .how-section4 h3{
+	font-size:2rem;
+	font-weight:500;
+}
+
+.how-content p{
+	font-size:0.8rem;
+}
+
+.how-section1{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
 }
 
 .how-section1 .how-content{
-	position: relative;
-	z-index: 1;
-	min-height: 450px;
-	min-width: 300px;
-	margin-left: 5rem;
-	background-color: rgb(239,240,224);
-	padding:5em;
+	float:left;
+	max-width:614px;
+	padding-bottom: 2rem;
 }
 
-/*How TO - Position Text Over an Image
-citation:https://www.w3schools.com/howto/howto_css_image_text.asp*/
+.how-section1 p{
+	padding-right:3em;
+}
+
+.how-section1 .how-content ul{
+	list-style:none;
+}
+
+.how-section1 img{
+	max-width: 409px;
+	margin-bottom: 2rem;
+}
+
+/*Citation: center text over an image in flexbox
+https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbox*/
 .how-section2{
-	position: relative;
-	text-align: left;
-	color: black;
+	display:box;
+	display:flex;
+	box-align:center;
+	align-items:center;
+	box-pack:center;
+	justify-content:center;
+}
+
+.how-section2 img{
+	position:relative;
 }
 
 .how-section2 .how-content{
-	position: absolute;
-	width:40%;
-	top: 50%;
-	left: 45%;
-	transform: translate(-50%, -50%);
+	position:absolute;
+	max-width:512px;
 }
 
+.hot-section3{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-items:center;
+}
 
-.how-section3 .column{
+.how-section3 img{
 	float:left;
-}
-
-.how-section3 .how-image{
-	width:60%;
+	max-width:614px;
 }
 
 .how-section3 .how-content{
-	width:40%;
-	padding:3.5em;
+	max-width:409px;
+	padding-bottom: 2rem;
 }
 
-.how-section3:after {
-	content:"";
-	display:table;
-	clear:both;
-
+.how-section4{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
 }
 
-
-.how-section4 .column{
-	float:left;
-}
-
-.how-section4 .how-image{
-	width:60%;
+.how-section4 img{
+	max-width:614px;
 }
 
 .how-section4 .how-content{
-	width:40%;
-	padding:3.5em;
-}
-
-.how-section4:after {
-	content:"";
-	display:table;
-	clear:both;
-
+	float:left;
+	max-width:409px;
+	padding-right:3em;
+	padding-bottom: 2rem;
 }
 
 
 /* About */
 
 .about-main{
-
-	margin-top: 3em;
-	margin-left: 10%;
+	padding-left:50px;
+	padding-right:50px;
 }
 
-.about-main .about-content{
-	position: relative;
-	z-index: 1;
-	min-height: 450px;
-	min-width: 300px;
-	margin-left: 5rem;
-	background-color: rgb(239,240,224);
-	padding:5em;
+.about-title{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-items:center;
 }
 
-.mission-content{
-	font-family: "Roboto Mono", monospace;
-	font-size: 12px
-	font-weight: 300;
+.about-title h2{
+	float:left;
+	max-width:300px;
 }
 
-.about-main .about-title{
-	max-width: 500px;
-	font-size: 20px;
-	font-weight: 400;
-	margin-top: 0;
-	position: absolute;
-	z-index: 2;
-	margin-top: 1.5em;
-	width: 100%;
-	font-weight: 500;
+.about-title .sub-nav{
+	list-style: none;
+	font-size: 1rem;
+	max-width:500px;
+	margin-top:-60px;
 }
 
-.about-main .mission{
-	width:80%;
-	margin-left:5em;
+.about-title .sub-nav li{
+	display: inline-block;
+	padding: 0 20px;
 }
 
-.sub-nav{
-	font-weight:400;
-	margin-top:8em;
-	margin-left:-1.8em;
-}
-
-
-.sub-nav ul{
-	list-style-type: none;
-}
-
-.sub-nav li{
-	color: black;
-}
-
-.sub-nav li a{
-	width:25%;
+.about-title .sub-nav li a {
+	transition: all 0.3s ease 0s;
 	color: black;
 	text-decoration: none;
-	font-size: 0.8em;
-	line-height:300%;
 }
 
-.sub-nav li a:hover, .sub-nav li a:active, .sub-nav li a:focus {
+.about-main .sub-nav li a:hover {
+	transition: all 0.3s ease 0s;
 	color: rgb(129,156,75);
-
 }
 
-.contact ul{
+.about-content{
+	clear:both;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+.about-content p{
+	float:left;
+	max-width:614px;
+	padding-right:3em;
+}
+
+.about-content img{
+	max-width: 409px;
+}
+
+
+.contact{
+	display:box;
+	display:flex;
+	box-align:center;
+	align-items:center;
+	box-pack:center;
+	justify-content:center;
+}
+
+.contact img{
+	position:relative;
+	max-width:1440px;
+}
+
+.contact-heading{
+	font-size:2rem;
+	font-weight:500;
+}
+
+.contact-content{
+	position:absolute;
+	max-width:500px;
+}
+
+.contact-content ul{
 	list-style-type: none;	
-	margin-left:3em;
-	margin-top:8em;
-}
-
-.contact button{
-	margin-left:7.5em;
+	margin-top:2em;
 }
 
 
@@ -546,6 +587,7 @@ input{
 	font-size: 0.75em;
 	border-radius: 3em;
 	transition: background-color 0.35s ease-out;
+	margin-left:45px;
 }
 
 .send:hover, .send:focus, .send:active{
