@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 
 *,*::after,*::before{
 	-webkit-box-sizing:border-box;
@@ -7,26 +7,25 @@
 }
 
 html {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Nanum Gothic", sans-serif;
 	margin:0;
 	padding: 0;
 }
 
-
-/* NAVIGATION MENU */
-/* navigation bar citation: https://www.youtube.com/watch?v=PwWHL3RyQgk ; */
-
+a {
+	color: black;
+}
 
 button {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Nanum Gothic", sans-serif;
 	font-weight: 300;
 	font-size: 12px;
-	padding: 0.6em 1.75em;
+	padding: 1em 2em;
 	background-color: black;
 	color: white;
 	border: none;
-	border-radius: 5em;
-	transition: all 0.3s ease 0s;
+	border-radius: 15em;
+	transition: all 0.25s ease-out;
 	display: inline-block;
 }
 
@@ -35,132 +34,259 @@ button {
 }
 
 button:hover, button:active, button:focus {
-	transition: background-color 0.35s ease-out;
+	transition: background-color 0.25s ease-out;
 	background-color: rgb(129,156,75);
+	cursor: pointer;
 }
 
 
-
-/* MAIN TEMPLATE (landing page, etc.)*/
-.horizontal-title h2 {
-	max-width: 500px;
-	font-size: 20px;
-	font-weight: 400;
-	margin-top: 0;
-}
-
-.horizontal-title p {
-	max-width: 500px;
-	font-size: 12px;
-	font-weight: 400;
-	margin-top: 0;
-}
-
-
-.card-title {
-	font-size: 15px;
-	font-weight: 400;
-}
-
-.plan-price {
-	font-size: 16px;
-	font-weight: 500;
-	color: rgb(129,156,75);
-}
-
-
-/* citation for horizontal scroll: https://medium.com/flexbox-and-grids/how-to-create-horizontally-scrollable-sections-with-flexbox-60d860f539b2 */
-
-.horizontal-container {
-	position: relative;
-	z-index: 1;
-	min-height: 450px;
-	min-width: 300px;
-	background-color: rgb(239,240,224);
-	margin-top: 2em;
-	margin-bottom: 5em;
-}
-
-.horizontal-container h2{
-	margin-left: 5em;
-}
-
-
-.card-container {
-	background-color: transparent;
-	min-width: auto;
-	min-height: 300px;
-	display: flex;
-	overflow-x: auto;
-	margin-left: 5em;
-	margin-right:  5em;
-}
-
-.card-container::-webkit-scrollbar {
-	display: none;
-}
-
-
-.card-container .cards{
-	margin-top: 100px;
-}
-
-.plans .cards{
-	margin-top: 90px;
-}
-
-.sample-meals .cards {
-	margin-top: 180px;
-}
-
-
-.container .horizontal-title {
-	position: absolute;
-	z-index: 2;
-}
-
-.container .horizontal-title h2{
-	margin-top: 1.5em;
+/* HAMBURGER MENU 
+citation: https://codepen.io/mutedblues/pen/MmPNPG */
+.header {
+	font-family: "Nanum Gothic", sans-serif;
+	background-color: white;
+	position: fixed;
+	align-items: center;
+	top: 0;
 	width: 100%;
-	font-weight: 500;
+	z-index: 10;
+	padding: 1em 0 1em 0;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
 }
 
-.price-cards {
-	padding: 20px;
+.header ul {
 	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.header .menu-items a {
+	display: block;
+	padding: 12px 12px;
+	text-decoration: none;
+	transition: .25s ease-out;
 	text-align: center;
 }
 
-.cards {
-	min-width: 300px;
-	min-height: 300px;	
-	margin: 20px;
-	}
-
-
-figcaption {
-	font-size: 11px;
-	font-weight: 300;
-	text-align: center;
+.header .menu-items a:hover, .header .menu-btn:hover {
+	background-color: rgb(205,218,177);
+	transition: .25s ease-out;
 }
 
-.event-button {
-	margin-top: 1.5em;
-	margin-left: 95px;
-	margin-bottom: 1.5em;
+.header .logo {
+	font-size: 1.5em;
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 10px 20px;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
-.plan-button {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+.header button {
+	padding: 0.8em 5em;
+	margin: 0.5em 0;
 	display: inline-block;
 }
 
-
-.index-button {
-	margin-top: 5em;
-	margin-right:  5em;
+.header .nav-button{
+	text-align: center;
 }
+
+
+.header .menu {
+	font-size: 0.8em;
+	clear: both;
+	max-height: 0;
+	transition: max-height .25s ease-out;
+}
+
+
+/* hamburger icon */
+.header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+	margin-right: 3em;
+}
+
+.header .menu-icon .navicon {
+	background: black;
+	display: block;
+	height: 2px;
+	width: 18px;
+	position: relative;
+	transition: background .25s ease-out;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+	background: black;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .25s ease-out;
+	width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+	top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+	top: -5px;
+}
+
+/* expanded menu within hamburger icon */
+.header .menu-btn {
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+	max-height: 290px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+
+
+
+
+/*INDEX CONTENT */
+.container {
+	margin-top: 5em;
+	margin-bottom: 4em;
+	background-color: rgb(205,218,177);
+	display: flex;
+	flex-direction: column;
+}
+
+.container-header {
+	margin: 2.5em 0 1em 4.5em;
+}
+
+.container-header h2 {
+	font-size: 1.25em;
+	margin-left: 0;
+	padding-bottom: 0;
+}
+
+.container-header p {
+		width:40em;
+		font-size: 0.9em;
+	}
+
+.container-content ul{
+	background-color: transparent;
+	min-width: auto;
+	min-height: 280px;
+	display: flex;
+	overflow-x: auto;
+	margin-left: 2em;
+	margin-right: 0.5em;
+	list-style: none;
+}
+
+.container-content ul li {
+	padding-right: 2em;
+}
+
+.container-content ul::-webkit-scrollbar {
+	display: none;
+}
+
+.container-content ul li img{
+	width: 250px;
+}
+
+
+
+
+
+/* PRODUCT CARDS */
+
+.card-content {
+	text-align: center;
+}
+
+.container-content .card-content .card-title {
+	font-size: 0.9em;
+	font-weight: 700;
+	margin-top: 0;
+	padding: 0.5em 0 0.5em 0;
+}
+
+.container-content .card-content p {
+	font-size: 0.8em;
+	padding: 0 0.75em 0em 0.75em;
+}
+
+.container-content .card-content button {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+
+
+/* PRICING PAGE */
+.container-content .card-content .plan-price {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: rgb(129,156,75);
+	padding-top: 0;
+}
+
+.container-content .pricing-card .card-title {
+	font-size: 1.1em;
+	font-weight: 700;
+	background-color:rgb(129,156,75);
+	color: white;
+	margin-bottom: 0;
+	padding: 0.6em 0 0.6em 0;
+}
+
+.container-content .pricing-card {
+	background-color:rgb(129,156,75);
+	width: 260px;
+	padding: 0 5px 0.6em 5px;
+	margin-right: 1.75em;
+	margin-bottom: 1.5em;
+}
+
+.container-content .pricing-card p {
+	color: rgb(205,218,177);
+}
+
+.container-content .pricing-card .plan-price {
+	color: white;
+}
+
+
+
+
 
 
 
@@ -249,6 +375,10 @@ figcaption {
 	font-weight: 500;
 	margin-top: 0;
 	margin-bottom: 2em;
+}
+
+.create-account .wide-button{
+	width: 400px;
 }
 
 .text-input{	/* text field input box */ 
@@ -596,174 +726,155 @@ input{
 
 
 
+/* MEDIA: screens below 445px (mobile) */
+@media (max-width: 445px) {
+	.header .logo {
+		margin-left: 0.5em;
+	}
 
+	.header .menu-icon {
+		margin-right: 1.75em;
+	}
 
-/* HAMBURGER MENU 
-citation: https://codepen.io/mutedblues/pen/MmPNPG */
+	.container-header {
+		margin: 1em 0 1em 0;
+		text-align: center;
+	}
 
+	.container-header h2{
+		font-size: 1em;
+		padding-bottom: 0.5em;
+	}
 
-/* header */
+	.container-header p {
+		width:22em;
+		margin-right: 0;
+	}
 
-.header {
-	font-family: "Roboto Mono", monospace;
-	background-color: white;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
-	position: sticky;
-	width: 100%;
-	z-index: 10;
-	padding: 1em 0 1em 0;
-}
+	.container-content ul{
+		margin-left: 0;
+		padding-left: 1.5em;
+	}
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
+	.container-content ul li {
+		padding-right: 1em;
+	}
 
-.header .menu-items a {
-  display: block;
-  padding: 12px 12px;
-  text-decoration: none;
-  transition: .25s ease-out;
-  text-align: center;
-}
+	.container-content {
+		margin-left: 0;
+	}
 
-.header .menu-items a:hover, .header .menu-btn:hover {
-  background-color: rgb(205,218,177);
-  transition: .25s ease-out;
-}
+	.container-content ul li img{
+		width: 260px;
+	}
 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
-  padding: 10px 20px;
-  margin-left: 2em;
-  margin-right: 2em;
-  text-decoration: none;
-}
+	.container-content .card-content p {
+		font-size: 0.8em;
+		padding: 0 0.75em 0em 0.75em;
+	}
 
-.header .join-button {
-	padding: 0.7em 5em;
-	display: inline-block;
-	margin: 0.5em 0;
-}
+	.container-content .card-content .plan-price {
+		font-size: 1.25em;
+	}
 
-.header .nav-button{
-	text-align: center;
-}
+	.container-content .pricing-card .card-title {
+		font-size: 1.1em;
+		padding-top: 0.5em;
+	}
 
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-  font-size: 0.8em;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 290px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
+	.container-content .pricing-card {
+		width: 270px;
+		margin-bottom: 1.5em;
+	}
 }
 
 
 
+/*MEDIA: screens above 1000px */
 @media (min-width: 1000px) {
 	.header {
 		align-items: center;
 		display: inline-block;
 	}
 
-  .header li {
-    float: left;
-    text-align: center;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    max-height: none;
-  }
-  .header .nav-button {
-  	float: right;
-  	display: inline-block;
-  }
-  .header .login-button{
-  	margin-right: 3em;
-  }
-  .header .join-button {
-	padding: 0.6em 2em;
-  }
-.header .nav-button a{
-	padding-left: 4px;
+	.header li {
+	    float: left;
+	    text-align: center;
+	}
+  
+	.header li a {
+    	padding: 20px 30px;
+	}
+
+	.header .menu {
+	    clear: none;
+	    max-height: none;
+	}
+
+	.header .nav-button {
+	  	float: right;
+	  	display: inline-block;
+	}
+
+  	.header .login-button{
+  		margin-right: 3em;
+  	}
+
+  	.header .join-button {
+		padding: 0.6em 2em;
+  	}
+
+	.header .nav-button a{
+		padding-left: 4px;
+	}
+
+  	.header .menu-icon{
+    	display: none;
+  	}
+
+  	.container-content ul {
+  		min-height: 360px;
+  	}
+
+  	.container-content ul li img{
+		width: 330px;
+	}
+
+	.container-header h2 {
+		font-size: 1.5em;
+	}
+
+	.container-header p {
+		max-width: 50em;
+		font-size: 1em;
+	}
+
+	.container-content .card-content .card-title {
+		margin-top: 0.5em;
+		font-size: 1em;
+	}
+
+	.container-content .card-content p {
+		font-size: 0.9em;
+		padding: 0 0.75em 0em 0.75em;
+	}
+
+	.container-content .card-content .plan-price {
+		font-size: 1.5em;
+	}
+
+	.container-content .pricing-card .card-title {
+		font-size: 1.3em;
+		padding-top: 0.25em;
+	}
+
+	.container-content .pricing-card {
+	width: 340px;
+	margin-bottom: 2em;
+	}
+
+
 }
-  .header .menu-icon{
-    display: none;
-  }
-}
+
+
+
