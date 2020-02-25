@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-
-<html>
+<doctype html>
+<html lang="en">
 
 <head>
-	<title>P02: How It Works</title>
+	<title>FreshEats: pricing</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="CSS/main.css">
-	<link rel="stylesheet" href="CSS/fonts.css">
-	<link rel="stylesheet" href="CSS/flexbox.css">
-
-	<script src="https://kit.fontawesome.com/a70479ac06.js" crossorigin="anonymous"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
@@ -21,31 +16,27 @@
 
 <body>
 
-	<!-- citation: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
+	<!-- menu citation: https://codepen.io/mutedblues/pen/MmPNPG  -->
 	<header class="header">
+		  <a href="index.html" class="logo">FreshEats</a>
 
-		<span class="navbar-toggle" id="js-navbar-toggle">
-			<i class="fas fa-bars"></i>
-		</span>
+		  <input class="menu-btn" type="checkbox" id="menu-btn" /> <!-- hamburger icon -->
+		  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-		<h1><a href="index.html" class="logo">FreshEats</a></h1>
+		  <ul class="menu">
+		    <li class="menu-items"><a href="how-it-works.html">HOW IT WORKS</a></li>
+		    <li class="menu-items"><a href="menu.html">MENU</a></li>
+		    <li class="menu-items"><a href="pricing.html">PRICING</a></li>
+		    <li class="menu-items"><a href="events.html">EVENTS</a></li>
+		    <li class="menu-items"><a href="about.html">ABOUT</a></li>
 
-		<nav>
-			<ul class="nav-items" id="js-menu">
-				<li><a href="how-it-works.html" class="box-item-nav">HOW IT WORKS</a></li>
-				<li><a href="menu.html" class="box-item-nav">MENU</a></li>
-				<li><a href="pricing.html" class="box-item-nav">PRICING</a></li>
-				<li><a href="events.html" class="box-item-nav">EVENTS</a></li> 
-				<li><a href="about.html" class="box-item-nav">ABOUT US</a></li> 
-			</ul>
-		</nav>
-
-		<div class="primary-buttons">
-			<a href="login.html"><button class="join-button nav-button">LOGIN</button></a>
-			<a href="join.html"><button class="join-button nav-button" >JOIN</button></a>
-		</div>
+		    <li class="nav-button login-button"><a href="join.html"><button class="join-button" >JOIN</button></a></li>
+		    <li class="nav-button"><a href="login.html"><button class="join-button">LOGIN</button></a></li>
+		  </ul>
 
 	</header>
+
+	
 
 	<button class="back" type="button">&#8636</button>
 	<!-- citation: https://www.toptal.com/designers/htmlarrows/arrows/-->
@@ -127,7 +118,7 @@
 		</div>
 	</div>
 
-	<footer>Copright reserved by June & Christina</footer>
+	<footer>Copright reserved by June Shi & Christina Hoang</footer>
 
 
 </body>
