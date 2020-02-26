@@ -39,6 +39,13 @@ button:hover, button:active, button:focus {
 	cursor: pointer;
 }
 
+figcaption {
+	font-size: 11px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
 
 /* HAMBURGER MENU 
 citation: https://codepen.io/mutedblues/pen/MmPNPG */
@@ -188,20 +195,22 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .container-header h2 {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	margin-left: 0;
 	padding-bottom: 0;
 }
 
 .container-header p {
-		width:40em;
-		font-size: 0.9em;
-	}
+	max-width: 45em;
+	font-size: 0.85em;
+	padding-bottom: 0.5em;
+}
 
 .container-content ul{
 	background-color: transparent;
 	min-width: auto;
-	min-height: 280px;
+	min-height: 300px;
+	padding-bottom: 2em;
 	display: flex;
 	overflow-x: auto;
 	margin-left: 2em;
@@ -218,29 +227,29 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .container-content ul li img{
-	width: 250px;
+	width: 330px;
 }
-
-
-
 
 
 /* PRODUCT CARDS */
 
 .card-content {
 	text-align: center;
+	background-color: rgba(255, 255, 255, 0.25);
+	padding-top: 2em;
+	padding-left: 2em;
 }
 
 .container-content .card-content .card-title {
-	font-size: 0.9em;
+	font-size: 1.25em;
 	font-weight: 700;
-	margin-top: 0;
+	margin-top: 0.5;
 	padding: 0.5em 0 0.5em 0;
 }
 
 .container-content .card-content p {
-	font-size: 0.8em;
-	padding: 0 0.75em 0em 0.75em;
+		font-size: 1.15em;
+		padding: 0 0.75em 0em 0.75em;
 }
 
 .container-content .card-content button {
@@ -260,20 +269,24 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .container-content .pricing-card .card-title {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 700;
 	color: white;
 	margin-bottom: 0;
-	padding: 0.6em 0 0.6em 0;
+	padding: 0.25em 0 0.6em 0;
+}
+
+.container-content .pricing-card img {
+	width: 280px;
 }
 
 .container-content .pricing-card {
 	background-color:rgb(129,156,75);
-	width: 260px;
+	width: 340px;
 	padding: 0 5px 0.6em 5px;
-	margin-right: 1.75em;
-	margin-bottom: 1.5em;
-	border-radius: 1.5em;
+	margin-right: 3em;
+	margin-bottom: 2em;
+	border-radius: 1.25em;
 }
 
 .container-content .pricing-card p {
@@ -282,6 +295,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 .container-content .pricing-card .plan-price {
 	color: white;
+	font-size: 1.5em;
 }
 
 .container-content .pricing-card button:hover, .container-content .pricing-card button:active, .container-content .pricing-card button:focus {
@@ -291,26 +305,41 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 
 
-
-figcaption {
-	font-size: 11px;
-	font-weight: 400;
-	text-align: center;
+/* LOGIN PAGE */
+.container-account {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 8em;
 }
+
+.container-account h2{
+	margin-left:0 ;
+	font-size: 1.25em;
+}
+
+.container-account .wide-button{
+	width: 400px;
+	margin-top: 2em;
+}
+
+
+
 
 /* CREATE ACCOUNT PAGES */
 /* step progress bar citation: http://kodhus.com/newsite/step-progress-bar-css-only/ */
 .join-container {
 	width: 100%;
-	margin: 30px auto;
-	padding-bottom: 20px; 
+	margin: 0 auto;
+	padding-bottom: 3em; 
 	text-align: center;
 }
 
 .progress-bar {
 	counter-reset: step;
 	display: inline-block;
-	width: 800px;
+	width: 700px;
+	padding-left: 0;
 }
 
 .progress-bar li {
@@ -375,18 +404,15 @@ figcaption {
 }
 
 .create-account{
-	text-align: center;
+	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
 }
 
 .create-account h2 {
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 1.25em;
+	font-weight: 400;
 	margin-top: 0;
-	margin-bottom: 2em;
-}
-
-.create-account .wide-button{
-	width: 400px;
 }
 
 .text-input{	/* text field input box */ 
@@ -400,30 +426,10 @@ figcaption {
 	margin-bottom: 1.25em;
 }
 
-
-/* CREATE ACCOUNT STEP 2 */
-.join-plan-cards {
+.join-step2-container {
 	margin-top: 0;
 }
 
-.container .step2 {
-	margin-left: 0;
-	margin-right: 10%;
-}
-
-.cards-step2 {
-	margin-left: 20px;
-}
-
-.cards-2{
-	padding: 20px;
-	margin: 0;
-	text-align: center;
-}
-
-.cards-2 .cards {
-	margin-top: 20px;
-}
 
 
 /* CREATE ACCOUNT STEP 3 */
@@ -752,18 +758,20 @@ input{
 	}
 
 	.container-header h2{
-		font-size: 1em;
+		font-size: 1.25em;
 		padding-bottom: 0.5em;
 	}
 
 	.container-header p {
-		width:22em;
-		margin-right: 0;
+		max-width: 25em;
+		align-content: center;
+		font-size: 12px;
 	}
 
 	.container-content ul{
+		min-height: 280px;
 		margin-left: 0;
-		padding-left: 1.5em;
+		padding: 0.5em 2em 0.5em 2em;
 	}
 
 	.container-content ul li {
@@ -775,12 +783,8 @@ input{
 	}
 
 	.container-content ul li img{
-		width: 260px;
-	}
-
-	.container-content .card-content p {
-		font-size: 0.8em;
-		padding: 0 0.75em 0em 0.75em;
+		max-width: 200px;
+		padding-bottom: 0.75em;
 	}
 
 	.container-content .card-content .plan-price {
@@ -792,16 +796,72 @@ input{
 		padding-top: 0.5em;
 	}
 
+	.container-content .card-content .card-title {
+		margin-top: 0em;
+		font-size: 1.25em;
+	}
+
+	.container-content .card-content p {
+		font-size: 12px;
+	}
+
 	.container-content .pricing-card {
-		width: 270px;
-		margin-bottom: 1.5em;
+	width: 270px;
+	margin-bottom: 1.5em;
+	border-radius: 1.5em;
+	}
+
+	.container-account .wide-button{
+	width: 330px;
+	font-size: 0.7em;
+	}
+
+	.container-account .long-input-field{
+	width: 330px;
+	font-size: 0.6em;
+	}
+
+	.progress-bar, .join-container  {
+		display: none;
+	}
+
+}
+
+
+
+/* MEDIA: screens below 800px (ipad) */
+@media (max-width: 800px) {
+	.container-content ul li img{
+		width: 280px;
+		padding-bottom: 0.75em;
+	}
+
+	.container-header p {
+		width:32em;
+	}
+
+	.progress-bar {
+		width: 520px;
+	}
+
+	.progress-bar li{
+		font-size: 0.65em;
+	}
+
+	.container-content .pricing-card img {
+		width: 230px;
+		padding-bottom: 0;
+	}
+
+	.container-content .pricing-card .card-title {
+		font-size: 1.1em;
 	}
 }
 
 
 
-/*MEDIA: screens above 1000px */
-@media (min-width: 1000px) {
+/*MEDIA: screens above 800px (THIS IS ONLY FOR THE NAVIGATION MENU) */
+@media (min-width: 800px) {
 	.header {
 		align-items: center;
 		display: inline-block;
@@ -842,49 +902,9 @@ input{
     	display: none;
   	}
 
-  	.container-content ul {
-  		min-height: 360px;
-  	}
-
-  	.container-content ul li img{
-		width: 330px;
+	.header .menu {
+	font-size: 0.8em;
 	}
-
-	.container-header h2 {
-		font-size: 1.5em;
-	}
-
-	.container-header p {
-		max-width: 50em;
-		font-size: 0.85em;
-		padding-bottom: 1em;
-	}
-
-	.container-content .card-content .card-title {
-		margin-top: 0.5em;
-		font-size: 1.25em;
-	}
-
-	.container-content .card-content p {
-		font-size: 1.15em;
-		padding: 0 0.75em 0em 0.75em;
-	}
-
-	.container-content .card-content .plan-price {
-		font-size: 1.5em;
-	}
-
-	.container-content .pricing-card .card-title {
-		font-size: 1.3em;
-		padding-top: 0.25em;
-	}
-
-	.container-content .pricing-card {
-	width: 340px;
-	margin-bottom: 2em;
-	border-radius: 1.25em;
-	}
-
 
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>FreshEats: home</title>
+	<title>FreshEats: join</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,30 +36,32 @@
 
 </header>
 
-	
+	<div class="container-account">
 	<!-- progress bar -->
-	<div class="join-container">
-		<ul class="progress-bar">
-			<li class="progress-step active">CREATE ACCOUNT</li>
-			<li class="progress-step">SELECT PLAN</li>
-			<li class="progress-step">SELECT RECIPES</li>
-			<li class="progress-step">DELIVERY INFO</li>
-			<li class="progress-step">SUMMARY</li>
-		</ul>
+		<div class="join-container">
+			<ul class="progress-bar">
+				<li class="progress-step active">CREATE ACCOUNT</li>
+				<li class="progress-step">SELECT PLAN</li>
+				<li class="progress-step">SELECT RECIPES</li>
+				<li class="progress-step">DELIVERY INFO</li>
+				<li class="progress-step">SUMMARY</li>
+			</ul>
+		</div>
+			
+		<div class="create-account">
+			<h2>Create a FreshEats Account</h2>
+			<input class="text-input long-input-field" type="text" placeholder="Full name">
+			<input class="text-input long-input-field" type="text" placeholder="Email address">
+			<!-- citation for password input: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password -->
+			<input class="text-input long-input-field" type="password" placeholder="Password">
+			<input class="text-input long-input-field" type="password" placeholder="Re-type password">
+			<a href="join-step2.html"><button class="join-button wide-button" >CONTINUE</button></a>
+		</div>
+
 	</div>
-		
-	<section class="create-account">
-		<h2>Create a FreshEats Account</h2>
-		<input class="text-input" type="text" placeholder="Full name">
-		<br>
-		<input class="text-input" type="text" placeholder="Email address">
-		<br> <!-- citation for password input: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password -->
-		<input class="text-input" type="password" placeholder="Password">
-		<br>
-		<input class="text-input" type="password" placeholder="Re-type password">
-		<br>
-		<a href="join-step2.html"><button class="join-button wide-button" >CONTINUE</button></a>
-	</section>
+
+
+	<footer>Copyright reserved by June Shi & Christina Hoang</footer>
 
 </body>
 	

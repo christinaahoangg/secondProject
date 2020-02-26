@@ -1,55 +1,89 @@
 <doctype html>
-
-<html>
+<html lang="en">
 
 <head>
-	<title>P02: Create Account - Step 2</title>
+	<title>FreshEats: join-step2</title>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="CSS/main.css">
-	<link rel="stylesheet" href="CSS/fonts.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
 
-	<!-- citation: https://www.youtube.com/watch?v=PwWHL3RyQgk -->
-	<header>
-		<h1><a href="index.html">FreshEats</a></h1>
+	<!-- menu citation: https://codepen.io/mutedblues/pen/MmPNPG  -->
+	<header class="header">
+		  <a href="index.html" class="logo">FreshEats</a>
 
-		<nav>
-			<ul class="nav-items">
-				<li><a href="how-it-works.html">HOW IT WORKS</a></li>
-				<li><a href="menu.html">MENU</a></li>
-				<li><a href="pricing.html">PRICING</a></li>
-				<li><a href="events.html">EVENTS</a></li> 
-				<li><a href="about.html">ABOUT US</a></li> 
-			</ul>
-		</nav>
+		  <input class="menu-btn" type="checkbox" id="menu-btn" /> <!-- hamburger icon -->
+		  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-		<div class="primary-buttons">
-		<a href="login.html"><button class="login-button">LOGIN</button></a>
-		<a href="join.html"><button class="join-button" >JOIN</button></a>
-		</div>
+		  <ul class="menu">
+		    <li class="menu-items"><a href="how-it-works.html">HOW IT WORKS</a></li>
+		    <li class="menu-items"><a href="menu.html">MENU</a></li>
+		    <li class="menu-items"><a href="pricing.html">PRICING</a></li>
+		    <li class="menu-items"><a href="events.html">EVENTS</a></li>
+		    <li class="menu-items"><a href="about.html">ABOUT</a></li>
+
+		    <li class="nav-button login-button"><a href="join.html"><button class="join-button" >JOIN</button></a></li>
+		    <li class="nav-button"><a href="login.html"><button class="join-button">LOGIN</button></a></li>
+		  </ul>
+
 	</header>
 
-	
+	<div class="container-account">
 	<!-- progress bar -->
-	<div class="join-container">
-		<ul class="progress-bar">
-			<li class="progress-step active"><a href="join.html">CREATE ACCOUNT</a></li>
-			<li class="progress-step active">SELECT PLAN</li>
-			<li class="progress-step">SELECT RECIPES</li>
-			<li class="progress-step">DELIVERY INFO</li>
-			<li class="progress-step">SUMMARY</li>
-		</ul>
-	</div>
-	
-	<section class="create-account">
-		<h2>Select a Plan</h2>
+		<div class="join-container">
+			<ul class="progress-bar">
+				<li class="progress-step active"><a href="join.html">CREATE ACCOUNT</a></li>
+				<li class="progress-step active">SELECT PLAN</li>
+				<li class="progress-step">SELECT RECIPES</li>
+				<li class="progress-step">DELIVERY INFO</li>
+				<li class="progress-step">SUMMARY</li>
+			</ul>
+		</div>
 
+		<h2>Select a Plan</h2>
+	</div>
+
+	<div class="container join-step2-container">
+	<div class="container-content pricing-container">
+			<ul>
+				<li class="card-content pricing-card"><p class="card-title">Classic Plan</p>
+					<img src="images/events-1.jpg" alt="People walking up a trail."><figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="plan-price">$10.40 per serving</p></figcaption>
+					<a href="join-step3.html"><button>SELECT PLAN</button></a>
+				</li>
+
+				<li class="card-content pricing-card"><p class="card-title">Family Plan</p>
+					<img src="images/events-1.jpg" alt="People walking up a trail."><figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="plan-price">$11.80 per serving</p></figcaption>
+					<a href="join-step3.html"><button>SELECT PLAN</button></a>
+				</li>
+
+				<li class="card-content pricing-card"><p class="card-title">Vegan Plan</p>
+					<img src="images/events-1.jpg" alt="People walking up a trail."><figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="plan-price">$10.40 per serving</p></figcaption>
+					<a href="join-step3.html"><button>SELECT PLAN</button></a>
+				</li>
+
+				<li class="card-content pricing-card"><p class="card-title">Keto Plan</p>
+					<img src="images/events-1.jpg" alt="People walking up a trail."><figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="plan-price">$11.90 per serving</p></figcaption>
+					<a href="join-step3.html"><button>SELECT PLAN</button></a>
+				</li>
+
+				<li class="card-content pricing-card"><p class="card-title">Clean Plan</p>
+					<img src="images/events-1.jpg" alt="People walking up a trail."><figcaption><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p class="plan-price">$12.10 per serving</p></figcaption>
+					<a href="join-step3.html"><button>SELECT PLAN</button></a>
+				</li>
+					
+			</ul>
+		</div>
+	</div>
+
+<!--
 		<div class="container join-plan-cards">
 			<div class="horizontal-container step2">
 				<section class="card-container plans cards-step2">
@@ -87,7 +121,10 @@
 			
 		</div>
 	</div>
-</section>
+</div> -->
+
+
+<footer>Copyright reserved by June Shi & Christina Hoang</footer>
 
 </body>
 	
