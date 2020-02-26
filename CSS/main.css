@@ -202,7 +202,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 .container-header p {
 	max-width: 45em;
-	font-size: 0.85em;
+	font-size: 1em;
 	padding-bottom: 0.5em;
 }
 
@@ -806,19 +806,19 @@ input{
 	}
 
 	.container-content .pricing-card {
-	width: 270px;
-	margin-bottom: 1.5em;
-	border-radius: 1.5em;
+		width: 270px;
+		margin-bottom: 1.5em;
+		border-radius: 1.5em;
 	}
 
 	.container-account .wide-button{
-	width: 330px;
-	font-size: 0.7em;
+		width: 330px;
+		font-size: 0.7em;
 	}
 
 	.container-account .long-input-field{
-	width: 330px;
-	font-size: 0.6em;
+		width: 330px;
+		font-size: 0.6em;
 	}
 
 	.progress-bar, .join-container  {
@@ -838,6 +838,7 @@ input{
 
 	.container-header p {
 		width:32em;
+		font-size: 0.9em;
 	}
 
 	.progress-bar {
