@@ -476,28 +476,12 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 
-
-
-.back{
-	border: none;
-	border-radius: 5em;
-	transition: all 0.3s ease 0s;
-	margin-left:80px;
-	float:left;
-	max-width:100px;
-}
-
-.back:hover, .back:active, .back:focus {
-	transition: color 0.35s ease-out;
-	color: rgb(129,156,75);
-}
-
-
 h2{
 	max-width:450px;
 	font-size: 3rem;
-	margin-left:5rem;
-	padding-bottom: 2em;
+	margin-left:9rem;
+	margin-top:9rem;
+	padding-bottom:1rem;
 	font-weight: 500;
 }
 
@@ -572,6 +556,7 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 .how-section2 .how-content{
 	position:absolute;
 	max-width:512px;
+	color:white;
 }
 
 .hot-section3{
@@ -583,13 +568,14 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 }
 
 .how-section3 img{
-	float:left;
+
 	max-width:614px;
 }
 
 .how-section3 .how-content{
 	max-width:409px;
 	padding-bottom: 2rem;
+	float:right;
 }
 
 .how-section4{
@@ -635,8 +621,8 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 .about-title .sub-nav{
 	list-style: none;
 	font-size: 1rem;
-	max-width:500px;
-	margin-top:-60px;
+	max-width:300px;
+	margin-top:6.5rem;
 }
 
 .about-title .sub-nav li{
