@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 
+html {
+	font-family: "Nanum Gothic", sans-serif;
+	margin:0;
+	padding: 0;
+}
+
+
 *,*::after,*::before{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
 
-html {
-	font-family: "Nanum Gothic", sans-serif;
-	margin:0;
-	padding: 0;
+body{
+	margin: 0;
 }
+
 
 a {
 	color: black;
@@ -20,7 +26,8 @@ button {
 	font-family: "Nanum Gothic", sans-serif;
 	font-weight: 400;
 	font-size: 12px;
-	padding: 1em 2em;
+	padding: 1em 0;
+	width: 10em;
 	background-color: black;
 	color: white;
 	border: none;
@@ -46,16 +53,16 @@ figcaption {
 }
 
 
-
 /* HAMBURGER MENU 
 citation: https://codepen.io/mutedblues/pen/MmPNPG */
 .header {
 	font-family: "Nanum Gothic", sans-serif;
 	background-color: white;
 	position: fixed;
+	display: inline-block;
 	align-items: center;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	z-index: 10;
 	padding: 1em 0 1em 0;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
@@ -89,18 +96,23 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	float: left;
 	padding: 10px 20px;
 	margin-left: 2em;
-	margin-right: 2em;
+	margin-right: 1em;
 }
 
-.header button {
-	padding: 0.8em 5em;
+.header .join-button {
+	padding: 0.9em;
 	margin: 0.5em 0;
 	display: inline-block;
+	width: 10em;
+}
+
+.header .nav-button a{
+	padding: 0;
 }
 
 .header .nav-button{
 	text-align: center;
-}
+  }
 
 
 .header .menu {
@@ -202,7 +214,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 .container-header p {
 	max-width: 45em;
-	font-size: 0.85em;
+	font-size: 1em;
 	padding-bottom: 0.5em;
 }
 
@@ -230,6 +242,45 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	width: 330px;
 }
 
+.second-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.second-container h2{
+	font-size: 1.5em;
+	margin-left: 0;
+	padding-bottom: 0;
+}
+
+.second-container .second-container-content ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0 2em;
+	padding-left: 0;
+	padding-bottom: 3em;
+}
+
+.second-container .second-container-content ul li{
+	text-align: center;
+	padding: 0 3em;
+}
+
+.second-container .second-container-content h3{
+	color: rgb(129,156,75);
+}
+
+.second-container .second-container-content h2{
+	font-size: 1em;
+	font-weight: 700;
+	margin: 0;
+}
+
+.second-container .second-container-content p{
+	font-size: 0.9em;
+}
 
 /* PRODUCT CARDS */
 
@@ -306,21 +357,24 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 
 /* LOGIN PAGE */
-.container-account {
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-top: 8em;
+.container-account{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+.login-screen{
+	margin-top: 6em;
+}
+
+.extend-screen{
+	min-height: 82vh;
 }
 
 .container-account h2{
+	margin-top: 0;
 	margin-left:0 ;
 	font-size: 1.25em;
-}
-
-.container-account .wide-button{
-	width: 400px;
-	margin-top: 2em;
 }
 
 
@@ -331,8 +385,20 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 .join-container {
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 3em; 
+	padding-top: 9em;
+	padding-bottom: 0; 
 	text-align: center;
+}
+
+.container-account .join-title {
+	padding: 3em 0 0 0;
+	margin: 0;
+}
+
+.container-account .join-description {
+	margin: 0.5em 0 0 0 ;
+	text-align: center;
+	max-width: 40em;
 }
 
 .progress-bar {
@@ -405,14 +471,18 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 .create-account{
 	display: flex;
- 	flex-direction: column;
- 	align-items: center;
+	flex-wrap: wrap;
+	align-content: center;
+ 	width: 420px;
+ 	padding-top: 3em;
 }
 
 .create-account h2 {
 	font-size: 1.25em;
 	font-weight: 400;
 	margin-top: 0;
+	padding: 0;
+	align-content: center;
 }
 
 .text-input{	/* text field input box */ 
@@ -423,37 +493,43 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	padding: 0.75em 0 0.75em 1em;
 	border-radius: 4em;
 	border: 1px solid rgb(129,156,75);
-	margin-bottom: 1.25em;
+	margin: 0 10px 1.25em 10px;
 }
 
-.join-step2-container {
-	margin-top: 0;
-}
-
-
-
-/* CREATE ACCOUNT STEP 3 */
-.cards-3{
-	padding: 20px;
-	margin: 0;
+.join-step-container {
+	margin-top: 3em;
 	margin-bottom: 0;
-	text-align: center;
 }
 
-.cards-3 .cards {
-	margin-top: 20px;
+.continue-button {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.continue-button .double-button {
+	margin: 0 1em;
+}
+
+.continue-button .secondary-button {
+	background-color: rgb(205,218,177);
+	color: rgb(129,156,75);
+}
+
+.continue-button .secondary-button:hover, .continue-button .secondary-button:active, .continue-button .secondary-button:focus {
+	background-color: rgb(129,156,75);
+	color: black;
 }
 
 [selected] {
 	background-color: rgb(129,156,75);
 }
 
-.cards-3:hover, .cards-3:active, .cards-3:focus {
+.card-content:hover, .card-content:active, .card-content:focus {
 	background-color: rgb(129,156,75);
 }
 
 /* citation for selection: https://css-tricks.com/almanac/selectors/s/selection/ */
-.cards-3::selection + .cards-3::after {
+.card-content::selection + .card-content::after {
 	background-color: rgb(129,156,75);
 }
 
@@ -464,15 +540,58 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 
-/* CREATE ACCOUNT STEP 5 */
-.payment-info {
-	margin-top: 4em;
+.summary-container {
+	display: flex;
+	flex-direction: row;
+	margin: 3em;
+	padding: 2em;
+	background-color: rgb(205,218,177);
+}
+
+.summary-content {
+	background-color: rgba(255, 255, 255,0.3);
+	padding: 1em 2em 0 2em;
+	margin-top: 1em;
+	margin-right: 4em;
+	min-height: 440px;
+}
+
+.summary-content ul li{
+	list-style: none;
+	font-size: 0.9em;
+}
+
+.summary-content ul {
+	padding-bottom: 1.3em;
+	padding-left: 0;
+}
+
+.summary-content .summary-title {
+	font-size: 1.1em;
+	font-weight: 700;
+	padding-top: 0.4em;
+	padding-bottom: 0;
 }
 
 
-.payment-info .join-button {
-	margin-top: 3em;
-	margin-bottom: 5em;
+
+
+
+
+
+
+.back{
+	border: none;
+	border-radius: 5em;
+	transition: all 0.3s ease 0s;
+	margin-left:80px;
+	float:left;
+	max-width:100px;
+}
+
+.back:hover, .back:active, .back:focus {
+	transition: color 0.35s ease-out;
+	color: rgb(129,156,75);
 }
 
 
@@ -484,16 +603,6 @@ h2{
 	padding-bottom:1rem;
 	font-weight: 500;
 }
-
-footer{
-	text-align:center;
-	padding:0.75em;
-	color: rgb(129,156,75);
-	background-color: rgb(205,218,177);
-	font-size: 0.75em;
-	bottom: 0;
-}
-
 
 
 /* HOW IT WORKS */
@@ -727,6 +836,33 @@ input{
 }
 
 
+/* FOOTER */
+.footer{
+	padding:0.35em;
+	color: rgb(129,156,75);
+	background-color: rgb(205,218,177);
+	font-size: 0.75em;
+	bottom: 0;
+	margin-top: 6em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.footer p{
+	margin: 0.5em 5em;
+
+}
+
+.footer a{
+	right: 0;
+	padding-left: 3em;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 700;
+}
+
 
 /* MEDIA: screens below 445px (mobile) */
 @media (max-width: 445px) {
@@ -738,24 +874,26 @@ input{
 		margin-right: 1.75em;
 	}
 
+
 	.container-header {
 		margin: 1em 0 1em 0;
 		text-align: center;
 	}
 
 	.container-header h2{
+		width: 100vw;
+		padding-top: 1.5em;
 		font-size: 1.25em;
-		padding-bottom: 0.5em;
+		text-align: center;
 	}
 
 	.container-header p {
-		max-width: 25em;
-		align-content: center;
+		text-align: center;
 		font-size: 12px;
 	}
 
 	.container-content ul{
-		min-height: 280px;
+		min-height: 250px;
 		margin-left: 0;
 		padding: 0.5em 2em 0.5em 2em;
 	}
@@ -771,6 +909,31 @@ input{
 	.container-content ul li img{
 		max-width: 200px;
 		padding-bottom: 0.75em;
+	}
+
+	.second-container .second-container-content ul{
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1;
+		justify-content: center;
+	}
+
+	.second-container h2{
+		padding-top: 0;
+		margin-top: 0;
+		font-size: 1.25em;
+	}
+
+	.second-container .second-container-content h3{
+		font-size: 1em;
+	}
+
+	.second-container .second-container-content h2{
+		font-size: 1em;
+	}
+
+	.second-container .second-container-content p{
+		width: 20em;
 	}
 
 	.container-content .card-content .plan-price {
@@ -792,31 +955,107 @@ input{
 	}
 
 	.container-content .pricing-card {
-	width: 270px;
-	margin-bottom: 1.5em;
-	border-radius: 1.5em;
+		width: 270px;
+		margin-bottom: 1.5em;
+		border-radius: 1.5em;
 	}
 
-	.container-account .wide-button{
-	width: 330px;
-	font-size: 0.7em;
+	.container-account {
+		padding-top: 5em;
+	}
+
+	.login-screen{
+	padding-top: 0;
+	}
+
+	.extend-screen{
+		min-height: 82vh;
 	}
 
 	.container-account .long-input-field{
-	width: 330px;
-	font-size: 0.6em;
+		width: 330px;
+		font-size: 0.7em;
+	}
+
+	.container-account .join-title {
+		font-size: 1.2em;
+		padding-bottom: 0.25em;
+	}
+
+	.container-account .join-description {
+		font-size: 0.9em;
+		width: 22em;
 	}
 
 	.progress-bar, .join-container  {
 		display: none;
 	}
 
+	.create-account{
+		width: 350px;
+	}
+
+	.create-account .half {
+		width: 330px;
+		font-size: 0.7em;
+	}
+
+	.summary-container {
+		padding: 0;
+		margin-bottom: 0;
+		width: 100%;
+		align-content: center;
+	}
+
+	.summary-container .pricing-container ul{
+		margin-right: 0;
+	} 
+
+	.summary-container .pricing-card {
+		margin:0;
+	}
+
+	.summary-content{
+		margin-bottom: 2em;
+	} 
+
+	.footer {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		justify-content: center;
+		font-size: 0.8em;
+	}
+
+	.footer a {
+		padding: 0em 2em;
+		margin: 0;
+	}
+
+	.footer p {
+		margin: 0.7em 0;
+	}
 }
 
 
 
 /* MEDIA: screens below 800px (ipad) */
 @media (max-width: 800px) {
+	.second-container .second-container-content h3{
+		font-size: 0.9em;
+	}
+
+	.second-container .second-container-content h2{
+		font-size: 0.9em;
+	}
+
+	.second-container .second-container-content p{
+		font-size: 0.8em;
+	}
+
+	.second-container .second-container-content ul li {
+		padding: 0 2em;
+	}
+
 	.container-content ul li img{
 		width: 280px;
 		padding-bottom: 0.75em;
@@ -824,6 +1063,7 @@ input{
 
 	.container-header p {
 		width:32em;
+		font-size: 0.9em;
 	}
 
 	.progress-bar {
@@ -842,6 +1082,35 @@ input{
 	.container-content .pricing-card .card-title {
 		font-size: 1.1em;
 	}
+
+	.summary-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.summary-content{
+		margin-right: 0;
+		width: auto;
+	}
+
+	.footer {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.footer a {
+		padding: 0;
+		float: none;
+		margin: 0 1em;
+	}
+
+	.footer p{
+		padding:0;
+		margin: 0.4em;
+		text-align: center;
+	}
+
 }
 
 
@@ -856,6 +1125,7 @@ input{
 	.header li {
 	    float: left;
 	    text-align: center;
+	    align-content: center;
 	}
   
 	.header li a {
@@ -865,32 +1135,28 @@ input{
 	.header .menu {
 	    clear: none;
 	    max-height: none;
-	}
-
-	.header .nav-button {
-	  	float: right;
-	  	display: inline-block;
-	}
-
-  	.header .login-button{
-  		margin-right: 3em;
-  	}
-
-  	.header .join-button {
-		padding: 0.6em 2em;
-  	}
-
-	.header .nav-button a{
-		padding-left: 4px;
+	    font-size: 0.75em;
 	}
 
   	.header .menu-icon{
     	display: none;
   	}
 
-	.header .menu {
-	font-size: 0.8em;
+  	.header .nav-button{
+		float: right;
+		display: inline-block;
+		text-align: center;
 	}
+
+ 	.header .login-button{
+ 		margin-right: 7em;
+ 		margin-left: 1.5em;
+  	}
+
+  	.header .join-button {
+	width: 6.5em;
+	}
+
 
 }
 
