@@ -1,32 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
 
 html {
-	font-family: "Roboto Mono", monospace;
-	margin: 2em;
-	max-width: 1120px;
+	font-family: "Nanum Gothic", sans-serif;
+	margin:0;
+	padding: 0;
 }
+
 
 h1{
-	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
 }
 
-h2{
-	background: rgb(239,240,224);
-	color: rgb(129,156,75);
-	margin-top: 1.5em;
+
+.styleguide-container {
+	margin: 8em 4.25em;
+}
+
+.styleguide-container h2{
+	font-weight: 700;
+	font-size: 1.25em;
+	margin-top: 3em;
 	margin-bottom: 0;
 }
 
-h3 {
-	font-style: italic;
+.styleguide-container h3 {
+	color: rgb(129,156,75);
+	font-weight: 700;
 	padding-top: 1.5em;
 	font-size: 1em;
 }
 
-p {
+.styleguide-container p {
 	margin-bottom: 0;
 	margin-top: 0.5em;
-	font-size: 0.75em;
+	font-size: 1em;
 }
 
 
@@ -73,27 +81,27 @@ p {
 } 
 
 
-.heading-one{
+.styleguide-container .heading-one{
 	color: black;
-	font-weight: 500;
-	font-size: 20px;
+	font-weight: 700;
+	font-size: 1.5em;
 }
 
-.heading-two{
+.styleguide-container .heading-two{
 	color: rgb(43,43,43);
-	font-weight: 400;
-	font-size: 15px;
+	font-weight: 500;
+	font-size: 1.25em;
 }
 
-.heading-three{
+.styleguide-container .heading-three{
 	color: rgb(129,156,75);
-	font-size: 12px;
-	font-weight: 400;
+	font-size: 1em;
+	font-weight: 700;
 }
 
-.paragraph{;
-	font-size: 14px;
-	font-weight: 300;
+.styleguide-container .paragraph{
+	font-size: 1em;
+	font-weight: 500;
 }
 
 ul {
@@ -129,11 +137,13 @@ ol li::before {
 	color: black;
 	font-size: 0.75em;
 	text-decoration: none;
-	padding: 1em 1.5em;
+	padding: 12px 12px;
+	transition: .25s ease-out;
 }
 
 .nav-main a:hover, .nav-main a:active {
-	color: rgb(129,156,75);
+	background-color: rgb(205,218,177);
+	transition: .25s ease-out;
 }
 
 
