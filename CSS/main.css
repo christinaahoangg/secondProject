@@ -195,7 +195,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 /*INDEX CONTENT */
 .container {
-	/*margin-top: 5em;*/
 	margin-bottom: 4em;
 	background-color: rgb(205,218,177);
 	display: flex;
@@ -207,7 +206,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .container-header h2 {
-	font-size: 1.5em;
 	margin-left: 0;
 	padding-bottom: 0;
 }
@@ -705,6 +703,11 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 	padding-bottom: 2rem;
 }
 
+.about-main h2, .how-main h2{
+	margin-left:1rem;
+	padding-top:3rem;
+}
+
 
 /* About */
 
@@ -717,7 +720,7 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 	clear:both;
 	display:flex;
 	flex-direction:row;
-	justify-content:center;
+	justify-content:flex-start;
 	flex-wrap:wrap;
 	align-items:center;
 }
@@ -849,6 +852,11 @@ input{
 
 .profile-main ul{
 	list-style-type: none;	
+	padding-left:6rem;
+}
+
+.profile-main .save{
+	margin-left:4rem;
 }
 
 /* Payments */
@@ -859,10 +867,11 @@ input{
 
 .payments-main ul{
 	list-style-type: none;	
+	padding-left:3.5rem;
 }
 
-.save{
-	margin-left:2.5rem;
+.payments-main .save{
+	margin-left:2rem;
 }
 
 
