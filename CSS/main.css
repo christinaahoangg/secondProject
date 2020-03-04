@@ -195,7 +195,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 /*INDEX CONTENT */
 .container {
-	margin-top: 5em;
+	/*margin-top: 5em;*/
 	margin-bottom: 4em;
 	background-color: rgb(205,218,177);
 	display: flex;
@@ -604,65 +604,46 @@ h2{
 	font-weight: 700;
 }
 
-/*.container {
-	margin-top: 5em;
-	margin-bottom: 4em;
-	background-color: rgb(205,218,177);
-	display: flex;
-	flex-direction: column;
+/* HOW IT WORKS */
+.how-main{
+	padding-left:50px;
+	padding-right:50px;
 }
 
-.container-header {
-	margin: 2.5em 0 1em 4.5em;
+.how-section2 h3, .how-section3 h3, .how-section4 h3{
+	font-size:2rem;
+	font-weight:700;
 }
 
-.container-header p {
-	max-width: 45em;
-	font-size: 1em;
-	padding-bottom: 0.5em;
-	}*/
+.how-content p{
+	font-size:0.8rem;
+}
 
+.how-section1{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
+}
 
-	/* HOW IT WORKS */
-	.how-main{
-		padding-left:50px;
-		padding-right:50px;
-	}
+.how-section1 .how-content{
+	float:left;
+	max-width:614px;
+	padding-bottom: 2rem;
+}
 
-	.how-section2 h3, .how-section3 h3, .how-section4 h3{
-		font-size:2rem;
-		font-weight:700;
-	}
+.how-section1 p{
+	padding-right:3em;
+}
 
-	.how-content p{
-		font-size:0.8rem;
-	}
+.how-section1 .how-content ul{
+	list-style:none;
+}
 
-	.how-section1{
-		display:flex;
-		flex-direction:row;
-		justify-content:center;
-		flex-wrap:wrap;
-		align-items:center;
-	}
-
-	.how-section1 .how-content{
-		float:left;
-		max-width:614px;
-		padding-bottom: 2rem;
-	}
-
-	.how-section1 p{
-		padding-right:3em;
-	}
-
-	.how-section1 .how-content ul{
-		list-style:none;
-	}
-
-	.how-section1 img{
-		max-width: 409px;
-	}
+.how-section1 img{
+	max-width: 409px;
+}
 
 /*Citation: center text over an image in flexbox
 https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbox*/
@@ -880,6 +861,9 @@ input{
 	list-style-type: none;	
 }
 
+.save{
+	margin-left:2.5rem;
+}
 
 
 /* FOOTER */
@@ -1106,8 +1090,8 @@ input{
 
 	/* About */
 	.about-main{
-		padding-left:30px;
-		padding-right:30px;
+		padding-left:10px;
+		padding-right:10px;
 	}
 
 	.about-content{
@@ -1124,29 +1108,85 @@ input{
 		max-width:100%;
 	}
 
+
+	/*Contact*/
+
 	.contact img{
-		position:relative;
-		max-width:100%;
+		max-width:200%;
+	}
 	}
 
-	.contact-content h3{
-		font-size:1.5rem;
-		margin-left:10rem;
+	.contact h3{
+		font-size:1rem;
+		margin-left:0rem;
+		font-weight: bolder;
 	}
 
 	.contact-content{
-		margin-top:1.5em;
+		margin-top:1em;
 		position:absolute;
-		max-width:500px;
+		max-width:250px;
 	}
 
 	.contact-content ul{
 		margin-top:1em;
 		font-size:0.5rem;
+		padding-left:0;
+	}
+
+	.contact-content .text-input{
+		padding-left: 1em;
+		padding-right: 0em;
+		border-radius: 2em;
+		font-size:0.8rem;
+		max-width: 250px;
 	}
 
 	#message{
-		height:3rem;
+		height:2rem;
+	}
+
+	/* Profile */
+
+	.profile-main{
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.profile-title h2{
+		float:none;
+	}
+
+	.profile-title .sub-nav ul{
+		margin-left:-2rem;
+	}
+
+	.profile-main ul{
+		margin-left:-2rem;	
+	}
+
+	.profile-main .text-input{
+		padding-left: 1em;
+		padding-right: 0em;
+		border-radius: 2em;
+		font-size:0.8rem;
+		max-width: 300px;
+	}
+
+	.payments-main ul{
+		margin-left:-2rem;
+	}
+
+	.payments-main .text-input{
+		padding-left: 1em;
+		padding-right: 0em;
+		border-radius: 2em;
+		font-size:0.8rem;
+		max-width: 300px;
+	}
+
+	.save{
+		margin-left:0;
 	}
 
 
@@ -1315,11 +1355,11 @@ input{
 		max-width:100%;
 	}
 
-	.contact-content h3{
-		font-size:1.5rem;
-		margin-left:10rem;
+	.contact h3{
+		font-size:3rem;
+		font-weight: bolder;
+		margin-left:0rem;
 	}
-
 	.contact-content{
 		margin-top:1.5em;
 		position:absolute;
@@ -1339,58 +1379,23 @@ input{
 	/* Profile */
 
 	.profile-main{
-		padding-left:50px;
-		padding-right:50px;
-	}
-
-	.profile-title{
-		display:flex;
-		flex-direction:row;
-		justify-content:flex-start;
-		flex-wrap:wrap;
-		align-items:center;
+		padding-left:30px;
+		padding-right:30px;
 	}
 
 	.profile-title h2{
-		float:left;
-		max-width:300px;
+		float:none;
 	}
 
 	.profile-title .sub-nav{
-		list-style: none;
-		font-size: 1rem;
-		max-width:500px;
-		margin-top:6.5rem;
-	}
-
-	.profile-title .sub-nav li{
-		display: inline-block;
-		padding: 0 20px;
-	}
-
-	.profile-title .sub-nav li a {
-		transition: all 0.3s ease 0s;
-		color: black;
-		text-decoration: none;
-	}
-
-	.profile-title .sub-nav li a:hover {
-		transition: all 0.3s ease 0s;
-		color: rgb(129,156,75);
-	}
-
-	.profile-main ul{
-		list-style-type: none;	
-	}
-
-	/* Payments */
-	.payments-main{
-		padding-left:50px;
-		padding-right:50px;
+		margin-top:-1rem;
+		padding-bottom: 1rem;
+		margin-left:0.7rem;
 	}
 
 	.payments-main ul{
-		list-style-type: none;	
+		padding-left:0;
+		margin-left:-0.8rem;
 	}
 
 
