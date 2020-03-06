@@ -668,20 +668,17 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 h2{
 	max-width:450px;
-	font-size: 1.5em;
+	font-size: 2em;
 	margin-top:2rem;
-	padding-bottom:0.5rem;
+	padding-bottom:2rem;
 	font-weight: 700;
+	align-items: center;
 }
 
 /* HOW IT WORKS */
 .how-main{
-	padding-left:50px;
-	padding-right:50px;
-}
-
-.how-title {
-	padding-left: 1em;
+	padding-left:80px;
+	padding-right:80px;
 }
 
 .how-section2 h3, .how-section3 h3, .how-section4 h3{
@@ -696,19 +693,21 @@ h2{
 .how-section1{
 	display:flex;
 	flex-direction:row;
-	justify-content:center;
+	justify-content:flex-start;
 	flex-wrap:wrap;
 	align-items:center;
+	padding-bottom: 5rem;
 }
 
 .how-section1 .how-content{
 	float:left;
-	max-width:614px;
+	max-width:892px;
 	padding-bottom: 2rem;
+	padding-right:3rem;
 }
 
 .how-section1 p{
-	padding-right:3em;
+	padding-right:4em;
 }
 
 .how-section1 .how-content ul{
@@ -716,7 +715,7 @@ h2{
 }
 
 .how-section1 img{
-	max-width: 409px;
+	max-width: 384px;
 }
 
 /*Citation: center text over an image in flexbox
@@ -728,11 +727,17 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 	align-items:center;
 	box-pack:center;
 	justify-content:center;
+	padding-bottom: 5rem;
 }
 
 .how-section2 img{
 	position:relative;
 	max-width:1280px;
+}
+
+.how-section2 p, .how-section3 p, .how-section4 p{
+	padding-bottom: 2rem;
+
 }
 
 .how-section2 .how-content{
@@ -744,19 +749,19 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 .how-section3{
 	display:flex;
 	flex-direction:row;
-	justify-content:flex-start;
+	justify-content:center;
 	flex-wrap:wrap;
 	align-items:center;
+	padding-bottom: 5rem;
 }
 
 .how-section3 img{
-	max-width:614px;
+	max-width:672px;
 	float:left;
 }
 
 .how-section3 .how-content{
-	max-width:300px;
-	padding-top:3rem;
+	max-width:448px;
 	padding-left:3rem;
 }
 
@@ -766,6 +771,7 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 	justify-content:center;
 	flex-wrap:wrap;
 	align-items:center;
+	padding-bottom: 5rem;
 }
 
 .how-section4 img{
@@ -776,7 +782,6 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 	float:left;
 	max-width:409px;
 	padding-right:3em;
-	padding-bottom: 2rem;
 }
 
 .about-main h2, .how-main h2{
@@ -1225,40 +1230,44 @@ footer a{
 	.contact img{
 		max-width:200%;
 	}
-	}
-
-	.contact h3{
-		font-size:1rem;
-		margin-left:0rem;
-		font-weight: bolder;
-	}
-
-	.contact-content{
-		margin-top:1em;
-		position:absolute;
-		max-width:250px;
-	}
-
-	.contact-content ul{
-		margin-top:1em;
-		font-size:0.5rem;
-		padding-left:0;
-	}
-
-	.contact-content .text-input{
-		padding-left: 1em;
-		padding-right: 0em;
-		border-radius: 2em;
-		font-size:0.8rem;
-		max-width: 250px;
-	}
-
-	#message{
-		height:2rem;
-	}
-	
 }
 
+.contact h3{
+	font-size:1rem;
+	margin-left:0rem;
+	font-weight: bolder;
+}
+
+.contact-content{
+	margin-top:1em;
+	position:absolute;
+	max-width:250px;
+}
+
+.contact-content ul{
+	margin-top:1em;
+	font-size:0.5rem;
+	padding-left:0;
+}
+
+.contact-content .text-input{
+	padding-left: 1em;
+	padding-right: 0em;
+	border-radius: 2em;
+	font-size:0.8rem;
+	max-width: 250px;
+}
+
+#message{
+	height:2rem;
+}
+
+/* Profile */
+	/*
+	.profile-main{
+		padding-left:10px;
+		padding-right:10px;
+	}
 
 
 /* MEDIA: screens above 450 px (ipad) */
@@ -1276,7 +1285,46 @@ footer a{
 		font-size: 1.25em;
 	}
 
-	.index-second-container .second-container-content h3{
+	.payments-main .text-input{
+		padding-left: 1em;
+		padding-right: 0em;
+		border-radius: 2em;
+		font-size:0.8rem;
+		max-width: 300px;
+	}
+
+	.save{
+		margin-left:0;
+	}
+	
+	
+
+	footer {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		justify-content: center;
+		font-size: 0.8em;
+	}
+
+
+	footer a {
+		padding: 0em 2em;
+		margin: 0;
+	}
+
+	footer p {
+		margin: 0.7em 0;
+	}
+
+	*/
+	
+}
+
+
+
+/* MEDIA: screens below 800px (ipad) */
+@media (max-width: 985px) {
+	.second-container .second-container-content h3{
 		font-size: 0.9em;
 	}
 
@@ -1343,15 +1391,6 @@ footer a{
 		padding-right:30px;
 	}
 
-	.how-section1{
-		flex-direction:column;
-	}
-
-	.how-section1 .how-content{
-		max-width:740px;
-		padding-bottom: 1rem;
-	}
-
 	.how-section1 img{
 		max-width: 100%;
 	}
@@ -1362,40 +1401,20 @@ footer a{
 		max-width:100%;
 	}
 
-	.how-section2 .how-content{
+/*	.how-section2 .how-content{
 		position:absolute;
 		max-width:300px;
 		color:black;
 		margin-top:-1em;
-	}
-
-	.how-section3{
-		flex-direction:column-reverse;
-		padding-bottom: 3em;
-	}
+	}*/
 
 	.how-section3 img{
-		max-width:100%;
-	}
-
-	.how-section3 .how-content{
-		padding-bottom:3rem;
-		margin-left:-65px;
-	}
-
-	.how-section4{
-		flex-direction:column;
+		max-width:672px;
+		float:left;
 	}
 
 	.how-section4 img{
-		max-width:100%;
-	}
-
-	.how-section4 .how-content{
-		float:left;
-		max-width:300px;
-		padding-right:3em;
-		padding-bottom: 2rem;
+		max-width:614px;
 	}
 
 
