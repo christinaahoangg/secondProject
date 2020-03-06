@@ -370,77 +370,82 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 
 
-/* PRODUCT CARDS */
-
-.card-content {
+/* PRICING PAGE */
+.plan-container {
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.25);
-	padding-top: 2em;
-	padding-left: 2em;
+	margin-top: 8em;
 }
 
-.container-content .card-content .card-title {
+.plan-container h2{
+	margin: 0;
+}
+
+.plan-container p{
+	width: 100%;
+	padding: 1em 2em;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+.container-content .pricing-content {
+	background-color:rgb(205,218,177);
+	width: 320px;
+	padding: 0 5px 0.6em 5px;
+	margin-bottom: 3em;
+	border-radius: 1.5em;
+}
+
+.container-content .pricing-content .card-title {
 	font-size: 1.25em;
 	font-weight: 700;
-	margin-top: 0.5;
+	margin-top: 0;
 	padding: 0.5em 0 0.5em 0;
 }
 
-.container-content .card-content p {
-	font-size: 1.15em;
-	padding: 0 0.75em 0em 0.75em;
-}
-
-.container-content .card-content button {
-	margin-top: 1em;
-	margin-bottom: 1em;
+.container-content .pricing-content p { /*pricing description */
+	font-size: 1em;
+	padding: 0 0.75em 1.25em;
+	color: black;
 }
 
 
+.container-content ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	min-height: 250px;
+	padding: 0;
+}
 
 
-/* PRICING PAGE */
-.container-content .card-content .plan-price {
-	font-size: 1.25em;
+.container-content ul li img{
+	max-width: 280px;
+	padding-bottom: 0.75em;
+}
+
+
+.container-content .pricing-content .plan-price {
+	font-size: 1.5em;
 	font-weight: 700;
 	color: rgb(129,156,75);
 	padding-top: 0;
 }
 
-.container-content .pricing-card .card-title {
+.container-content .pricing-content .card-title {
 	font-size: 1.3em;
 	font-weight: 700;
-	color: white;
-	margin-bottom: 0;
-	padding: 0.25em 0 0.6em 0;
-}
-
-.container-content .pricing-card img {
-	width: 280px;
-}
-
-.container-content .pricing-card {
-	background-color:rgb(129,156,75);
-	width: 340px;
-	padding: 0 5px 0.6em 5px;
-	margin-right: 3em;
-	margin-bottom: 2em;
-	border-radius: 1.25em;
-}
-
-.container-content .pricing-card p {
-	color: rgb(205,218,177);
-}
-
-.container-content .pricing-card .plan-price {
-	color: white;
-	font-size: 1.5em;
-}
-
-.container-content .pricing-card button:hover, .container-content .pricing-card button:active, .container-content .pricing-card button:focus {
-	background-color: rgb(205,218,177);
 	color: black;
+	margin-bottom: 0;
+	padding: 0.5em 0 0.6em 0;
 }
+
+.container-content .pricing-content .plan-button {
+	margin-bottom: 1.5em;
+}
+
+
 
 
 
@@ -1037,69 +1042,13 @@ footer a{
 
 	.container-header p {
 		text-align: center;
-		font-size: 12px;
-	}
-
-	.container-content ul{
-		min-height: 250px;
-		margin-left: 0;
-		padding: 0.5em 2em 0.5em 2em;
-	}
-
-	.container-content ul li {
-		padding-right: 1em;
-	}
-
-	.container-content {
-		margin-left: 0;
-	}
-
-	.container-content ul li img{
-		max-width: 200px;
-		padding-bottom: 0.75em;
-	}
-
-	.second-container h2{
-		padding-top: 0;
-		margin-top: 0;
-		font-size: 1.25em;
-	}
-
-	.second-container .second-container-content h3{
 		font-size: 1em;
 	}
 
-	.second-container .second-container-content h2{
-		font-size: 1em;
-	}
 
-	.second-container .second-container-content p{
-		width: 20em;
-	}
 
-	.container-content .card-content .plan-price {
-		font-size: 1.25em;
-	}
 
-	.container-content .pricing-card .card-title {
-		font-size: 1.1em;
-		padding-top: 0.5em;
-	}
 
-	.container-content .card-content .card-title {
-		margin-top: 0em;
-		font-size: 1.25em;
-	}
-
-	.container-content .card-content p {
-		font-size: 12px;
-	}
-
-	.container-content .pricing-card {
-		width: 270px;
-		margin-bottom: 1.5em;
-		border-radius: 1.5em;
-	}
 
 	.container-account {
 		padding-top: 5em;
@@ -1325,8 +1274,19 @@ footer a{
 	}
 
 
-	.container-content ul li img{
-		width: 280px;
+	/*pricing page */
+	.plan-container .container-content ul{
+		flex-direction: row;
+		margin: 0 3em;
+	}
+
+	.container-content .pricing-content {
+	width: 280px;
+	}
+
+
+	.container-content .pricing-content img{
+		width: 340px;
 		padding-bottom: 0.75em;
 	}
 
@@ -1335,6 +1295,7 @@ footer a{
 		font-size: 0.9em;
 	}
 
+	/* join page */
 	.progress-bar {
 		width: 520px;
 	}
@@ -1521,6 +1482,51 @@ footer a{
 	.index-third-container ul img {
 		width: 300px;
 	}
+
+
+	/* PRICING PAGE */
+	.site-container {
+		justify-content: center;
+	}
+
+	.site-container .pricing-header {
+
+	}
+
+	.site-container .pricing-header p{
+		text-align: center;
+		width: 50%;
+		margin: 0;
+	}
+
+	.plan-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container-content ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: center;
+		margin: 0 3em;
+	}
+
+	.container-content .pricing-content {
+		max-width: 300px auto;
+		margin: 3em 0.6em;
+		border-radius: 1.25em;
+	}
+
+	.container-content .pricing-content p {
+		font-size: 0.85em;
+		width: 280px;
+		
+	}
+
+
 
 
 }
