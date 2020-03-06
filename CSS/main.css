@@ -18,9 +18,8 @@ body{
 }
 
 h2{
-	font-family: 'Arial', sans-serif;
-	font-weight:bold;
-	font-size: 4rem;
+	font-weight:700;
+	font-size: 2.5em;
 	font-weight: 700;
 	padding-top:3rem;
 	padding-left:65px;
@@ -254,46 +253,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	transition: all 0.25s ease-out;
 }
 
-/*
-.container-header {
-	text-align: center;
-}
-
-.container-header h2 {
-	margin-left: 0;
-	padding-bottom: 0;
-}
-
-.container-header p {
-	max-width: 45em;
-	font-size: 1em;
-	padding-bottom: 0.5em;
-}
-
-.container-content ul{
-	background-color: transparent;
-	min-width: auto;
-	min-height: 300px;
-	padding-bottom: 2em;
-	display: flex;
-	overflow-x: auto;
-	margin-left: 2em;
-	margin-right: 0.5em;
-	list-style: none;
-}
-
-.container-content ul li {
-	padding-right: 2em;
-}
-
-.container-content ul::-webkit-scrollbar {
-	display: none;
-}
-
-.container-content ul li img{
-	width: 330px;
-} */
-
 .index-second-container {
 	display: flex;
 	flex-direction: column;
@@ -302,7 +261,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .index-second-container h2{
-	font-size: 3rem;
+	font-size: 1.5em;
 	padding-bottom: 0;
 	margin-left: 0;
 }
@@ -329,12 +288,13 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .index-second-container .second-container-content h2{
-	font-size: 1.4em;
-	margin-left: 0;
+	font-size: 1.1em;
+	padding: 0;
 }
 
 .index-second-container .second-container-content p{
 	font-size: 0.9em;
+	padding-bottom: 2em;
 }
 
 .index-third-container {
@@ -388,35 +348,31 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .container-content .pricing-content {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	background-color:rgb(205,218,177);
 	width: 320px;
 	padding: 0 5px 0.6em 5px;
 	margin-bottom: 3em;
 	border-radius: 1.5em;
+	align-content: center;
 }
 
 .container-content .pricing-content .card-title {
 	font-size: 1.25em;
 	font-weight: 700;
-	margin-top: 0;
+	margin: 0;
 	padding: 0.5em 0 0.5em 0;
 }
 
 .container-content .pricing-content p { /*pricing description */
 	font-size: 1em;
-	padding: 0 0.75em 1.25em;
+	padding: 0 0.75em 0.5em;
 	color: black;
-}
-
-
-.container-content ul {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-	min-height: 250px;
-	padding: 0;
+	text-align: center;
 }
 
 
@@ -425,20 +381,10 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	padding-bottom: 0.75em;
 }
 
-
 .container-content .pricing-content .plan-price {
 	font-size: 1.5em;
 	font-weight: 700;
 	color: rgb(129,156,75);
-	padding-top: 0;
-}
-
-.container-content .pricing-content .card-title {
-	font-size: 1.3em;
-	font-weight: 700;
-	color: black;
-	margin-bottom: 0;
-	padding: 0.5em 0 0.6em 0;
 }
 
 .container-content .pricing-content .plan-button {
@@ -1202,7 +1148,7 @@ footer a{
 
 
 /* MEDIA: screens above 450 px (ipad) */
-@media (min-width: 450px) {
+@media (min-width: 445px) {
 
 	.index-container .index-header h2{
 		font-size: 2.25em;
@@ -1214,6 +1160,56 @@ footer a{
 
 	.index-container .index-header .secondary-button {
 		font-size: 1.25em;
+	}
+
+	.index-second-container h2{
+		font-size: 1.8em;
+		padding-top: 0;
+	}
+
+	.index-second-container .second-container-content h3{
+		font-size: 1em;
+	}
+
+	.index-second-container .second-container-content h2{
+		font-size: 1em;
+		margin-right: 0;
+	}
+
+	.index-second-container .second-container-content p{
+		font-size: 0.8em;
+		max-width: 13em;
+	}
+
+	.index-second-container .second-container-content ul li {
+		padding: 0 1.5em;
+	}
+
+	.index-third-container h2 {
+		font-size: 1.8em;
+		padding-bottom: 0;
+	}
+
+	.container-content ul{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.plan-container .header-title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.plan-container .header-title h2{
+		font-size: 1.85em;
+	}
+
+	.plan-container .header-title p{
+		width: 30em;
+		font-size: 1em;
 	}
 
 	.payments-main .text-input{
@@ -1240,50 +1236,150 @@ footer a{
 
 	footer a {
 		padding: 0em 2em;
-		margin: 0;
+		margin: 0.5em;
 	}
 
 	footer p {
 		margin: 0.7em 0;
 	}
-
-	*/
 	
 }
 
 
 
-/* MEDIA: screens below 800px (ipad) */
-@media (max-width: 985px) {
-	.second-container .second-container-content h3{
-		font-size: 0.9em;
+
+
+/*MEDIA: screens above 800px */
+@media (min-width: 800px) {
+	.header {
+		align-items: center;
+		display: inline-block;
+	}
+
+	.header li {
+		float: left;
+		text-align: center;
+		align-content: center;
+	}
+
+	.header li a {
+		padding: 20px 30px;
+	}
+
+	.header .menu {
+		clear: none;
+		max-height: none;
+		font-size: 0.75em;
+	}
+
+	.header .menu-icon{
+		display: none;
+	}
+
+	.header .nav-button{
+		float: right;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.header .login-button{
+		margin-right: 7em;
+		margin-left: 1.5em;
+	}
+
+	.header .join-button {
+		width: 6.5em;
+	}
+
+	.index-container .index-header h2{
+		font-size: 2.5em;
+		min-width: 30em;
+	}
+
+	.index-container .index-header p{
+		font-size: 1.5em;
+		margin-bottom: 3em;
+	}
+
+	.index-container .index-header .secondary-button {
+		font-size: 1em;
+	}
+
+	.index-second-container h2, .index-third-container h2 {
+		font-size: 2.5em;
+	}
+
+	.index-second-container .second-container-content h3{
+		font-size: 1.25em;
 	}
 
 	.index-second-container .second-container-content h2{
-		font-size: 0.9em;
-		margin-right: 0;
+		padding-top: 1em;
+		font-size: 1.25em;
 	}
 
 	.index-second-container .second-container-content p{
-		font-size: 0.8em;
-		max-width: 10em;
+		max-width: 20em;
+		text-align: center;
+		margin:0;
 	}
 
-	.index-second-container .second-container-content ul li {
-		padding: 0 2em;
+	.index-third-container ul img {
+		width: 300px;
 	}
 
 
-	/*pricing page */
-	.plan-container .container-content ul{
+	/* PRICING PAGE */
+	.site-container {
+		justify-content: center;
+	}
+
+	.site-container .pricing-header {
+
+	}
+
+	.site-container .pricing-header p{
+		text-align: center;
+		width: 50%;
+		margin: 0;
+	}
+
+	.plan-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container-content ul {
+		list-style: none;
+		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: center;
 		margin: 0 3em;
 	}
 
 	.container-content .pricing-content {
-	width: 280px;
+		max-width: 300px auto;
+		margin: 3em 0.6em;
+		border-radius: 1.25em;
 	}
 
+	.container-content .pricing-content p {
+		font-size: 0.85em;
+		width: 280px;
+		
+	}
+
+	.plan-container .header-title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.plan-container .header-title p{
+		width: 40em;
+	}
 
 	.container-content .pricing-content img{
 		width: 340px;
@@ -1388,7 +1484,7 @@ footer a{
 
 
 	/* Profile */
-	/*
+	
 	.profile-main{
 		padding-left:30px;
 		padding-right:30px;
@@ -1410,121 +1506,6 @@ footer a{
 	}
 
 
-	*/
-}
-
-
-
-/*MEDIA: screens above 800px */
-@media (min-width: 800px) {
-	.header {
-		align-items: center;
-		display: inline-block;
-	}
-
-	.header li {
-		float: left;
-		text-align: center;
-		align-content: center;
-	}
-
-	.header li a {
-		padding: 20px 30px;
-	}
-
-	.header .menu {
-		clear: none;
-		max-height: none;
-		font-size: 0.75em;
-	}
-
-	.header .menu-icon{
-		display: none;
-	}
-
-	.header .nav-button{
-		float: right;
-		display: inline-block;
-		text-align: center;
-	}
-
-	.header .login-button{
-		margin-right: 7em;
-		margin-left: 1.5em;
-	}
-
-	.header .join-button {
-		width: 6.5em;
-	}
-
-	.index-container .index-header h2{
-		font-size: 2.5em;
-		min-width: 30em;
-	}
-
-	.index-container .index-header p{
-		font-size: 1.5em;
-		margin-bottom: 3em;
-	}
-
-	.index-container .index-header .secondary-button {
-		font-size: 1em;
-	}
-
-	.site-container .index-second-container .second-container-content h2{
-		font-size: 0.9em;
-	}
-
-	.site-container .index-second-container .second-container-content p{
-		max-width: 20em;
-	}
-
-	.index-third-container ul img {
-		width: 300px;
-	}
-
-
-	/* PRICING PAGE */
-	.site-container {
-		justify-content: center;
-	}
-
-	.site-container .pricing-header {
-
-	}
-
-	.site-container .pricing-header p{
-		text-align: center;
-		width: 50%;
-		margin: 0;
-	}
-
-	.plan-container {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.container-content ul {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-content: flex-start;
-		justify-content: center;
-		margin: 0 3em;
-	}
-
-	.container-content .pricing-content {
-		max-width: 300px auto;
-		margin: 3em 0.6em;
-		border-radius: 1.25em;
-	}
-
-	.container-content .pricing-content p {
-		font-size: 0.85em;
-		width: 280px;
-		
-	}
 
 
 
