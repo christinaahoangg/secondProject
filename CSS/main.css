@@ -19,7 +19,7 @@ body{
 
 h2{
 	font-weight:bold;
-	font-size: 4rem;
+	font-size: 2.5em;
 	font-weight: 700;
 	padding-top:3rem;
 	padding-left:65px;
@@ -41,6 +41,7 @@ a {
 	font-weight: 400;
 	font-size: 0.85em;
 	padding: 1em 0;
+	margin: 0 0.5em;
 	min-width: 10em;
 	background-color: black;
 	color: white;
@@ -201,7 +202,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 /*INDEX CONTENT */
 .site-container {
-	min-height: 100vh;
+	min-height: 80vh;
 	background-color: white;
 }
 
@@ -332,20 +333,23 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 
 /* PRICING PAGE */
-.plan-container {
-	text-align: center;
-	margin-top: 8em;
+.header-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5em;
 }
 
-.plan-container h2{
+.header-title h2{
 	margin: 0;
 }
 
-.plan-container p{
-	width: 100%;
+.header-title p{
+	width: 40em;
 	padding: 1em 2em;
 	font-size: 1.1em;
 	margin: 0;
+	text-align: center;
 }
 
 .container-content .pricing-content {
@@ -376,6 +380,11 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	text-align: center;
 }
 
+.menu-content .card-title {
+	font-weight: 700;
+	font-size: 1.25em;
+}
+
 
 .container-content ul li img{
 	max-width: 280px;
@@ -402,19 +411,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 
-.pricing-container button{
-	background-color: black;
-	color: white;
-	padding: 1em 3em;
-	border: none;
-	border-radius: 15em;
-	transition: all 0.25s ease-out;
-	text-decoration: none;
-	font-size: 0.8em;
-	font-weight: 400;
-	margin-top: 4em;
-}
-
 
 /* LOGIN PAGE */
 .container-account{
@@ -423,20 +419,16 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	align-items: center;
 }
 
-.login-screen{
-	margin-top: 6em;
-}
-
-.extend-screen{
-	min-height: 82vh;
-}
-
 
 
 
 
 /* CREATE ACCOUNT PAGES */
 /* step progress bar citation: http://kodhus.com/newsite/step-progress-bar-css-only/ */
+.container-account .account-title {
+	margin-top: 0;
+}
+
 .join-container {
 	width: 100%;
 	margin: 0 auto;
@@ -459,7 +451,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 .progress-bar {
 	counter-reset: step;
 	display: inline-block;
-	width: 700px;
+	width: 530px;
 	padding-left: 0;
 }
 
@@ -561,8 +553,25 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	margin-top: 2em;
 }
 
-.continue-button .double-button {
-	margin: 0 1em;
+
+.container .menu-content ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	justify-content: space-around;
+}
+
+.menu-content ul li{
+	width: 20em;
+	text-align: center;
+	margin-top: 3em;
+	margin: 0.5em;
+	padding: 1em;
+	top: 0;
+	background-color: rgb(205,218,177);
+}
+.menu-content ul li input{
+	border-color: color: rgb(129,156,75);
 }
 
 .continue-button .secondary-button {
@@ -575,18 +584,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	color: black;
 }
 
-[selected] {
-	background-color: rgb(129,156,75);
-}
-
-.card-content:hover, .card-content:active, .card-content:focus {
-	background-color: rgb(129,156,75);
-}
-
-/* citation for selection: https://css-tricks.com/almanac/selectors/s/selection/ */
-.card-content::selection + .card-content::after {
-	background-color: rgb(129,156,75);
-}
 
 
 .create-account .half {
@@ -598,16 +595,13 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 .summary-container {
 	display: flex;
 	flex-direction: row;
-	margin: 3em;
 	padding: 2em;
-	background-color: rgb(205,218,177);
 }
 
 .summary-content {
-	background-color: rgba(255, 255, 255,0.3);
+	background-color: rgb(205,218,177);
 	padding: 1em 2em 0 2em;
 	margin-top: 1em;
-	margin-right: 4em;
 	min-height: 440px;
 }
 
@@ -982,7 +976,7 @@ footer a{
 /* MEDIA: screens below 600px (mobile) */
 @media (max-width: 600px) {
 	.header .logo {
-		margin-left: 0.5em;
+		margin-left: 1em;
 	}
 
 	.header .menu-icon {
@@ -995,34 +989,40 @@ footer a{
 		text-align: center;
 	}
 
-	/*.container-header h2{
-		width: 100vw;
-		padding-top: 1.5em;
-		font-size: 1.25em;
-		text-align: center;
-	}*/
-
 	.container-header p {
 		text-align: center;
 		font-size: 1em;
 	}
 
+	.header-title h2{
+		font-size: 2em;
+	}
 
+	.header-title p{
+	width: 25em;
+	padding: 1em 2em;
+	font-size: 1em;
+	margin: 0;
+	text-align: center;
+	}
 
-
+	.container-content ul{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0;
+	}
 
 
 	.container-account {
-		padding-top: 5em;
+		padding-top: 0;
 	}
 
 	.login-screen{
 		padding-top: 0;
 	}
 
-	.extend-screen{
-		min-height: 82vh;
-	}
 
 	.container-account .long-input-field{
 		width: 330px;
@@ -1030,12 +1030,12 @@ footer a{
 	}
 
 	.container-account .join-title {
-		font-size: 1.2em;
+		font-size: 1.75em;
 		padding-bottom: 0.25em;
 	}
 
 	.container-account .join-description {
-		font-size: 0.9em;
+		font-size: 1em;
 		width: 22em;
 	}
 
@@ -1057,6 +1057,8 @@ footer a{
 		margin-bottom: 0;
 		width: 100%;
 		align-content: center;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.summary-container .pricing-container ul{
@@ -1241,19 +1243,21 @@ footer a{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-left: 0;
 	}
 
-	.plan-container .header-title{
+	.header-title{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	/*.plan-container .header-title h2{
-		font-size: 1.85em;
-	}*/
+	.header-title h2{
+		font-size: 1.8em;
+		margin: 0;
+	}
 
-	.plan-container .header-title p{
+	.header-title p{
 		width: 30em;
 		font-size: 1em;
 	}
@@ -1334,17 +1338,15 @@ footer a{
 	}
 
 
-	/* About */
-
-	.about-content p{
-		padding-bottom: 3rem;
-	}
 
 
 	/*Contact*/
+	.contact {
+		margin-top: 5em;
+	}
 
 	.contact-content{
-		position:static;
+		position: absolute;
 		max-width:100%;
 	}
 
@@ -1363,6 +1365,16 @@ footer a{
 	}
 
 
+	.summary-container {
+		align-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.summary-container .summary-content {
+		margin-right: 0;
+		width: 100%;
+	}
 
 	footer {
 		flex-wrap: wrap;
@@ -1482,7 +1494,7 @@ footer a{
 		margin: 0;
 	}
 
-	.plan-container {
+	.header-title {
 		display: flex;
 		flex-direction: column;
 	}
@@ -1495,6 +1507,7 @@ footer a{
 		align-content: flex-start;
 		justify-content: center;
 		margin: 0 3em;
+		padding-left: 0;
 	}
 
 	.container-content .pricing-content {
@@ -1509,13 +1522,13 @@ footer a{
 		
 	}
 
-	.plan-container .header-title{
+	.header-title{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.plan-container .header-title p{
+	.header-title p{
 		width: 40em;
 	}
 
@@ -1531,7 +1544,7 @@ footer a{
 
 	/* join page */
 	.progress-bar {
-		width: 520px;
+		width: 700px;
 	}
 
 	.progress-bar li{
@@ -1548,7 +1561,8 @@ footer a{
 	}
 
 	.summary-container {
-		flex-direction: column;
+		margin-top: 0;
+		flex-direction: row;
 		align-items: center;
 	}
 
@@ -1679,7 +1693,7 @@ footer a{
 
 	.contact img{
 		position:relative;
-		max-width:100%;
+		width: auto;
 	}
 
 	.contact-content{
@@ -1696,31 +1710,6 @@ footer a{
 		margin-top:2em;
 	}
 
-
-	/* Profile */
-/*
-.profile-main{
-	padding-left:30px;
-	padding-right:30px;
-}
-
-.profile-title h2{
-	float:none;
-}
-
-.profile-title .profile-nav{
-	margin-top:-1rem;
-	padding-bottom: 1rem;
-	margin-left:0.7rem;
-}
-
-.payments-main ul{
-	padding-left:0;
-	margin-left:-0.8rem;
-}
-
-
-*/
 }
 
 
@@ -1941,6 +1930,19 @@ footer a{
 		list-style-type: none;	
 		margin-top:2em;
 	}
+
+	.header-title h2{
+		margin: 0;
+	}
+
+	.header-title p{
+		width: 40em;
+		padding: 1em 2em;
+		font-size: 1.1em;
+		margin: 0;
+		text-align: center;
+	}
+
 
 
 }

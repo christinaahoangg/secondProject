@@ -26,17 +26,15 @@
 		  <ul class="menu">
 		    <li class="menu-items"><a href="how-it-works.html">HOW IT WORKS</a></li>
 		    <li class="menu-items"><a href="pricing.html">PRICING</a></li>
-		    <li class="menu-items"><a href="events.html">EVENTS</a></li>
 		    <li class="menu-items"><a href="about.html">ABOUT</a></li>
 
-		    <li class="nav-button login-button"><a href="join.html"><button class="join-button" >JOIN</button></a></li>
-		    <li class="nav-button"><a href="login.html"><button class="join-button">LOGIN</button></a></li>
+		    <li class="nav-button login-button"><a href="join.html" type="button" class="primary-button">JOIN</a></li>
+	    	<li class="nav-button"><a href="login.html" type="button" class="primary-button">LOGIN</a></li>
 		  </ul>
 
 	</header>
 
 	<div class="container-account">
-	<!-- progress bar -->
 		<div class="join-container">
 			<ul class="progress-bar">
 				<li class="progress-step active"><a href="join.html">CREATE ACCOUNT</a></li>
@@ -46,42 +44,83 @@
 				<li class="progress-step">SUMMARY</li>
 			</ul>
 		</div>
-
-		<h2 class="join-title">Select Your Recipes</h2>
-		<p class="join-description">For the Classic Plan, you can select any 3 recipes from this week's menu. Our recipes rotate weekly so that you never get bored of eating the same meals.</p>
+			
+		<div class="header-title account-title">
+			<h2 class="join-title">Select Your Recipes</h2>
+			<p class="join-description">For the Classic Plan, you can select any 3 recipes from this week's menu. Our recipes rotate weekly so that you never get bored of eating the same meals.</p>
+		</div>
 	</div>
 
 
-<div class="container join-step-container">
-	<div class="container-content">
+
+	<div class="container-content menu-content">
 			<ul>
 				<li class="card-content" tabindex=1>
-					<img src="images/food-image-2.jpg" alt="Avocado and egg toast."><figcaption><p class="card-title">Avocado Toast with Eggs</p><p>A balanced breakfast that's delicious and nutritious. Perfectly ripe avocados mashed on whole grain toast, topped with spinach and soft boiled eggs.<p>Carbs: 48g</p><p>Protein: 13g</p><p>Fat: 18g</p></figcaption>
+					<img src="images/food-image-2.jpg" alt="Avocado and egg toast.">
+					<p class="card-title">Avocado Toast with Eggs</p>
+					<p>A balanced breakfast that's delicious and nutritious. Perfectly ripe avocados mashed on whole grain toast, topped with spinach and soft boiled eggs.</p>
+					<p>Carbs: 48g</p>
+					<p>Protein: 13g</p>
+					<p>Fat: 18g</p>
+					<input type="checkbox" value="yes">
 				</li>
 
 				<li class="card-content" tabindex=1>
-					<img src="images/food-image-3.jpg" alt="Grilled Steak Tacos"><figcaption><p class="card-title">Grilled Steak Tacos</p><p>A healthy twist on signature tacos. Tender grilled steak, diced avocados, onions, and cilantro wrapped in warm corn tortillas.</p><p>Carbs: 32g</p><p>Protein: 24g</p><p>Fat: 16g</p></figcaption>
+					<img src="images/food-image-3.jpg" alt="Grilled Steak Tacos">
+					<p class="card-title">Grilled Steak Tacos</p>
+					<p>A healthy twist on signature tacos. Tender grilled steak, diced avocados, onions, and cilantro wrapped in warm corn tortillas.</p>
+					<p>Carbs: 32g</p>
+					<p>Protein: 24g</p>
+					<p>Fat: 16g</p>
+					<input type="checkbox" value="yes">
 				</li>
 
 				<li class="card-content" tabindex=1>
-					<img src="images/menu-1.jpg" alt="Yogurt bowl with chickpeas, figs, olives, edamame, and pita."><figcaption><p class="card-title">Savoury Yogurt Bowl</p><p>Savoury yogurt bowls are underrated. Our version is topped with chickpeas, figs, olives, edamame, and pita.</p><p>Carbs: 42g</p><p>Protein: 22g</p><p>Fat: 13g</p></figcaption>
+					<img src="images/menu-1.jpg" alt="Yogurt bowl with chickpeas, figs, olives, edamame, and pita.">
+					<p class="card-title">Savoury Yogurt Bowl</p>
+					<p>Savoury yogurt bowls are underrated. Our version is topped with chickpeas, figs, olives, edamame, and pita.</p>
+					<p>Carbs: 42g</p>
+					<p>Protein: 22g</p>
+					<p>Fat: 13g</p>
+					<input type="checkbox" value="yes">
 				</li>
 
-			
+				<li class="card-content" tabindex=1>
+					<img src="images/food-image-1.jpg" alt="Stir fried beef vermicelli noodles">
+					<p class="card-title">Beef Vermicelli Noodles</p>
+					<p>A light but flavourful meal. Delicious sliced grilled beef on top of a bed of vemicelli noodles topped with vegetables.</p>
+					<p>Carbs: 48g</p>
+					<p>Protein: 18g</p>
+					<p>Fat: 20g</p>
+					<input type="checkbox" value="yes">
+				</li>
+
+				<li class="card-content" tabindex=1>
+					<img src="images/food-image-4.jpg" alt="Blueberry banana french toast">
+					<p class="card-title">Blueberry Banana French Toast</p>
+					<p>Nothing better than starting your day off with a deliciously sweet breakfast of french toast topped with bluebrries and bananas.</p>
+					<p>Carbs: 46g</p>
+					<p>Protein: 13g</p>
+					<p>Fat: 15g</p>
+					<input type="checkbox" value="yes">
+				</li>
+
 			</ul>
 		</div>
-	</div>	
+	
 
 
 	<div class="continue-button">
-			<a href="join-step2.html"><button class="double-button secondary-button">BACK</button></a>
-			<a href="join-step4.html"><button class="double-button">CONTINUE</button></a>
-		</div>
+			<a href="join-step2.html" type="button" class="primary-button">BACK</a>
+			<a href="join-step4.html" type="button" class="primary-button">CONTINUE</a>
+	</div>
 
 
 	<footer>
 		<p>Copyright reserved by June Shi & Christina Hoang</p>
-		<p><a href="styleguide.html">STYLEGUIDE</a><a href="citations.html">CITATIONS</a><a href="https://github.com/christinaahoangg/secondProject">GIT REPOSITORY</a></p>
+		<a href="styleguide.html">STYLEGUIDE</a>
+		<a href="citations.html">CITATIONS</a>
+		<a href="https://github.com/christinaahoangg/secondProject">GIT REPOSITORY</a>
 	</footer>
 
 </body>
