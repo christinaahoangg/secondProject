@@ -95,6 +95,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	text-decoration: none;
 	transition: .25s ease-out;
 	text-align: center;
+	align-content: center;
 }
 
 .header .menu-items a:hover, .header .menu-btn:hover {
@@ -113,12 +114,10 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	margin-right: 1em;
 }
 
-.header .nav-button .primary-button{
+.header .menu .nav-button{
 	font-size: 1em;
 	padding: 1em 0;
 	min-width: 6.4em;
-	display: inline-block;
-	justify-content: center;
 }
 
 
@@ -524,13 +523,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	padding-top: 3em;
 }
 
-/*.create-account h2 {
-	font-size: 1.25em;
-	font-weight: 400;
-	margin-top: 0;
-	padding: 0;
-	align-content: center;
-}*/
 
 .text-input{	/* text field input box */ 
 	background-color: white;
@@ -600,7 +592,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 .summary-content {
 	background-color: rgb(205,218,177);
-	padding: 1em 2em 0 2em;
+	padding: 1em 4em 0 4em;
 	margin-top: 1em;
 	min-height: 440px;
 }
@@ -851,56 +843,59 @@ input{
 	padding: 0 15em;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 }
 
-.profile-container .profile-title {
+.profile-container .profile-title h2{
 	min-width: 8em;
-	padding-top: 3em;
+	margin: 2em 0;
+	padding: 0;
+
 }
 
 
-.profile-nav nav{
+.profile-nav {
 	list-style: none;
 	font-size: 0.9rem;
 	max-width:500px;
-	margin:0;
+	margin: 0 2.25em;
 
 	display:flex;
 	flex-direction:column;
 	flex-wrap: wrap;
 }
 
-.profile-container .profile-nav nav ul{
+.profile-container .profile-nav ul{
 	list-style: none;
 	padding: 0;
 }
 
-.profile-container .profile-nav nav ul li {
+.profile-container .profile-nav ul li {
 	padding-bottom: 1em;
 }
 
-.profile-container .profile-nav nav ul li a {
+.profile-container .profile-nav ul li a {
 	transition: all 0.3s ease 0s;
+	font-size: 1.1em;
 	color: black;
 	text-decoration: none;
 }
 
-.profile-container .profile-nav nav ul li a:hover {
+.profile-container .profile-nav ul li a:hover {
 	transition: all 0.3s ease 0s;
 	color: rgb(129,156,75);
 }
 
 .profile-main{
 	background-color: rgb(205,218,177);
-	padding: 0 50px;
-	width: 100%;
-	min-height: 60vh;
-	margin: 5em 0 0 9em;	
+	padding: 0 4em;
+	margin-top: 5em;	
 }
 
 .profile-main ul{
 	list-style: none;
 	padding-top: 1.5em;
+	padding-left: 0;
 }
 
 .profile-main ul li{
@@ -913,12 +908,19 @@ input{
 
 .profile-main h4 {
 	margin-bottom: 0.75em;
-	padding-left: 10px;
 }
 
 .profile-main .text-input {
+	width: 330px;
 	margin-bottom: 0;
+	margin-left: 0;
 }
+
+.profile-main .profile-button {
+	margin: 2em 0.5em;
+}
+
+
 
 /* Payments */
 .payments-main{
@@ -1055,7 +1057,6 @@ footer a{
 	.summary-container {
 		padding: 0;
 		margin-bottom: 0;
-		width: 100%;
 		align-content: center;
 		display: flex;
 		flex-direction: column;
@@ -1073,6 +1074,19 @@ footer a{
 		margin-bottom: 2em;
 	} 
 
+
+	.profile-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 0;
+	}
+
+
+	.profile-title h2 {
+		font-size: 1.75em;
+	}
 
 
 	/* HOW IT WORKS */
@@ -1373,8 +1387,21 @@ footer a{
 
 	.summary-container .summary-content {
 		margin-right: 0;
-		width: 100%;
+		width: 100vw;
 	}
+
+	.profile-container {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.profile-container .profile-nav  {
+		margin: 0;
+	}
+
 
 	footer {
 		flex-wrap: wrap;
@@ -1455,6 +1482,18 @@ footer a{
 		font-size: 1em;
 	}
 
+	.index-second-container .second-container-content h2{
+		font-size: 1.25em;
+		padding-top: 1em;
+	}
+
+	.index-second-container .second-container-content p{
+		max-width: 20em;
+		font-size: 0.9em;
+		text-align: center;
+		margin:0;
+	}
+
 	.index-second-container h2, .index-third-container h2 {
 		font-size: 2.5em;
 	}
@@ -1463,19 +1502,47 @@ footer a{
 		font-size: 1.25em;
 	}
 
-	.index-second-container .second-container-content h2{
-		padding-top: 1em;
-		font-size: 1.25em;
-	}
 
-	.index-second-container .second-container-content p{
-		max-width: 20em;
-		text-align: center;
-		margin:0;
+	.index-third-container ul img {
+		width: 300px;
 	}
 
 	.index-third-container ul img {
 		width: 300px;
+	}
+
+	.header-title img{
+		max-width: 100%;
+		height:auto;
+	}
+
+	/* join page */
+	.progress-bar {
+		width: 700px;
+	}
+
+	.progress-bar li{
+		font-size: 0.65em;
+	}
+
+	.container-content .pricing-card img {
+		width: 230px;
+		padding-bottom: 0;
+	}
+
+	.container-content .pricing-card .card-title {
+		font-size: 1.1em;
+	}
+
+	.summary-container {
+		margin-top: 0;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.summary-content{
+		margin-right: 0;
+		width: auto;
 	}
 
 
@@ -1542,65 +1609,12 @@ footer a{
 		font-size: 0.9em;
 	}
 
-	/* join page */
-	.progress-bar {
-		width: 700px;
-	}
 
-	.progress-bar li{
-		font-size: 0.65em;
-	}
-
-	.container-content .pricing-card img {
-		width: 230px;
-		padding-bottom: 0;
-	}
-
-	.container-content .pricing-card .card-title {
-		font-size: 1.1em;
-	}
-
-	.summary-container {
-		margin-top: 0;
-		flex-direction: row;
-		align-items: center;
-	}
-
-	.summary-content{
-		margin-right: 0;
-		width: auto;
-	}
-
-
-	/* HOW IT WORKS */
+		/* HOW IT WORKS */
 
 	.header-title img{
 		max-width: 100%;
 		height:auto;
-	}
-
-	.how-section2 h3, .how-section3 h3, .how-section4 h3{
-		font-size:2rem;
-		font-weight:700;
-	}
-
-	.how-content p{
-		font-size:0.8rem;
-	}
-
-	.how-section1{
-		display:flex;
-		flex-direction:row;
-		justify-content:center;
-		flex-wrap:wrap;
-		align-items:center;
-		padding-bottom: 5rem;
-	}
-
-	.how-section1 .how-content{
-		float:left;
-		max-width:892px;
-		padding-bottom: 2rem;
 	}
 
 	.how-section1 p{
@@ -1618,174 +1632,7 @@ footer a{
 	}
 
 	.how-section2 p{
-
 		max-width:60%;
-
-	}
-
-
-	.how-section3{
-		display:flex;
-		flex-direction:row;
-		justify-content:center;
-		flex-wrap:wrap;
-		align-items:center;
-		padding-bottom: 5rem;
-	}
-
-	.how-section3 img{
-		max-width:672px;
-		float:left;
-	}
-
-	.how-section3 .how-content{
-		max-width:448px;
-		padding-left:3rem;
-	}
-
-	.how-section4{
-		display:flex;
-		flex-direction:row;
-		justify-content:center;
-		flex-wrap:wrap;
-		align-items:center;
-		padding-bottom: 5rem;
-	}
-
-	.how-section4 img{
-		max-width:614px;
-	}
-
-	.how-section4 .how-content{
-		float:left;
-		max-width:409px;
-		padding-right:3em;
-	}
-
-
-	/* About */
-
-	.about-content{
-		clear:both;
-		display:flex;
-		flex-direction:row;
-		justify-content:center;
-		flex-wrap:wrap;
-		align-items:center;
-	}
-
-	.about-content p{
-		float:left;
-		max-width:70%;
-		padding-bottom:3rem;
-		line-height: 2em;
-	}
-
-
-	.contact{
-		display:box;
-		display:flex;
-		box-align:center;
-		align-items:center;
-		box-pack:center;
-		justify-content:center;
-	}
-
-	.contact img{
-		position:relative;
-		width: auto;
-	}
-
-	.contact-content{
-		position:absolute;
-	}
-
-	.contact-content h3{
-		font-size:2rem;
-		font-weight: bolder;
-	}
-
-	.contact-content ul{
-		list-style-type: none;	
-		margin-top:2em;
-	}
-
-}
-
-
-
-/*MEDIA: screens above 800px */
-@media (min-width: 800px) {
-	.header {
-		align-items: center;
-		display: inline-block;
-	}
-
-	.header li {
-		float: left;
-		text-align: center;
-		align-content: center;
-	}
-
-	.header li a {
-		padding: 20px 30px;
-	}
-
-	.header .menu {
-		clear: none;
-		max-height: none;
-		font-size: 0.75em;
-	}
-
-	.header .menu-icon{
-		display: none;
-	}
-
-	.header .nav-button{
-		float: right;
-		display: inline-block;
-		text-align: center;
-	}
-
-	.header .login-button{
-		margin-right: 7em;
-		margin-left: 1.5em;
-	}
-
-	.header .join-button {
-		width: 6.5em;
-	}
-
-	.index-container .index-header h2{
-		font-size: 2.5em;
-		min-width: 30em;
-	}
-
-	.index-container .index-header p{
-		font-size: 1.5em;
-		margin-bottom: 3em;
-	}
-
-	.index-container .index-header .secondary-button {
-		font-size: 1em;
-	}
-
-	.index-second-container .second-container-content h2{
-		font-size: 1.25em;
-	}
-
-	.index-second-container .second-container-content p{
-		max-width: 20em;
-		font-size: 0.9em;
-	}
-
-	.index-third-container ul img {
-		width: 300px;
-	}
-
-	.header-title img{
-		max-width: 100%;
-		height:auto;
 	}
 
 	.how-section2 h3, .how-section3 h3, .how-section4 h3{
@@ -1886,6 +1733,8 @@ footer a{
 	}
 
 
+	/* About */
+
 	.about-content{
 		clear:both;
 		display:flex;
@@ -1923,7 +1772,7 @@ footer a{
 
 	.contact-content h3{
 		font-size:2rem;
-		font-weight: bolder;
+		font-weight: 700;
 	}
 
 	.contact-content ul{
@@ -1943,7 +1792,18 @@ footer a{
 		text-align: center;
 	}
 
+	.profile-container {
+		display: flex;
+		flex-direction: row;
+	}
 
+	.profile-container .profile-nav ul {
+		text-align: left;
+	}
+
+	.profile-title h2{
+		text-align: left;
+	}
 
 }
 
