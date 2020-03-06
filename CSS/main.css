@@ -18,8 +18,8 @@ body{
 }
 
 h2{
-	font-weight:700;
-	font-size: 2.5em;
+	font-weight:bold;
+	font-size: 4rem;
 	font-weight: 700;
 	padding-top:3rem;
 	padding-left:65px;
@@ -392,7 +392,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	margin-bottom: 1.5em;
 }
 
-
 .pricing-content{
 	clear:both;
 	display:flex;
@@ -402,6 +401,19 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	align-items:center;
 }
 
+
+.pricing-container button{
+	background-color: black;
+	color: white;
+	padding: 1em 3em;
+	border: none;
+	border-radius: 15em;
+	transition: all 0.25s ease-out;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 400;
+	margin-top: 4em;
+}
 
 
 /* LOGIN PAGE */
@@ -419,11 +431,6 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	min-height: 82vh;
 }
 
-.container-account h2{
-	margin-top: 0;
-	margin-left:0 ;
-	font-size: 1.25em;
-}
 
 
 
@@ -525,13 +532,13 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 	padding-top: 3em;
 }
 
-.create-account h2 {
+/*.create-account h2 {
 	font-size: 1.25em;
 	font-weight: 400;
 	margin-top: 0;
 	padding: 0;
 	align-content: center;
-}
+}*/
 
 .text-input{	/* text field input box */ 
 	background-color: white;
@@ -988,12 +995,12 @@ footer a{
 		text-align: center;
 	}
 
-	.container-header h2{
+	/*.container-header h2{
 		width: 100vw;
 		padding-top: 1.5em;
 		font-size: 1.25em;
 		text-align: center;
-	}
+	}*/
 
 	.container-header p {
 		text-align: center;
@@ -1246,9 +1253,9 @@ footer a{
 		align-items: center;
 	}
 
-	.plan-container .header-title h2{
+	/*.plan-container .header-title h2{
 		font-size: 1.85em;
-	}
+	}*/
 
 	.plan-container .header-title p{
 		width: 30em;
