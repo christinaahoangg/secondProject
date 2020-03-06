@@ -29,62 +29,75 @@
 	    <li class="menu-items"><a href="events.html">EVENTS</a></li>
 	    <li class="menu-items"><a href="about.html">ABOUT</a></li>
 
-	    <li class="nav-button login-button"><a href="join.html"><button class="join-button">JOIN</button></a></li>
-	    <li class="nav-button"><a href="login.html"><button class="join-button">LOGIN</button></a></li>
+	    <li class="nav-button login-button"><a href="join.html" type="button" class="primary-button">JOIN</a></li>
+	    <li class="nav-button"><a href="login.html" type="button" class="primary-button">LOGIN</a></li>
 	  </ul>
 
 </header>
 	
+	<div class="site-container">
 
-	<!-- horizontal scroll citation: https://medium.com/flexbox-and-grids/how-to-create-horizontally-scrollable-sections-with-flexbox-60d860f539b2 -->
-	<div class="container">
-		<div class="container-header">
-			<h2>Healthy Eating Delivered to Your Door</h2>
-			<p>Easy. Quick. Delicious.</p>
+		<div class="index-container">
+			<div class="index-image">
+				<picture>
+
+		          <source media="(min-width: 800px)" srcset="images/index-image.jpg 1x">
+		          <source srcset="images/index-image@0.5x.jpg 1.5x, images/index-image-mobile.jpg 2x">
+
+		          <img src="images/index-image.jpg" alt="A table of food.'"> 
+	      	</div>
+
+			<div class="index-header">
+				<h2>Healthy Eating Delivered to Your Door</h2>
+				<p>Easy. Quick. Delicious.</p>
+				
+				<a href="join.html" type="button" class="secondary-button">GET STARTED</a>
+			</div>
+		</div>
+
+
+		<div class="index-second-container">		
+				<h2>How It Works</h2>
 			
-			<a href="join.html"><button>GET STARTED</button></a>
+			<div class="second-container-content">
+				<ul>
+					<li><h3>01</h3><h2>Select Your Plan</h2><p>Select a plan that suits your health goals, and select your meals weekly</p></li>
+
+					<li><h3>02</h3><h2>Delivered to Your Door</h2><p>Chef created meals using fresh local ingredients are delivered to your door</p></li>
+
+					<li><h3>03</h3><h2>Heat and Eat</h2><p>Heat up your nutritious meals in just minutes whenever you're ready to eat</p></li>
+				</ul>
+			</div>
+
+			<a href="how-it-works.html" type="button" class="primary-button">LEARN MORE</a>
 		</div>
 
-		<div class="container-content">
-			<ul>
-				<li><img src="images/food-image-1.jpg" alt="A bowl of vermicelli noodles with beef and vegetables."></li>
 
-				<li><img src="images/food-image-2.jpg" alt="Avocado and egg toast."></li>
+		<div class="index-third-container">
+			<h2>Delicous Meals with Fresh Ingredients</h2>
+				<ul>
+					<li><img src="images/food-image-1.jpg" alt="A bowl of vermicelli noodles with beef and vegetables."></li>
 
-				<li><img src="images/food-image-3.jpg" alt="Steak tacos"></li>
-
-				<li><img src="images/food-image-4.jpg" alt="French toast topped with banana slices, blueberries, and maple syrup."></li>
-
-				<li><img src="images/food-image-5.jpg" alt="Carbonara pasta"></li>
-
-				<li><img src="images/food-image-6.jpg" alt="Shrimp salad"></li>
-			</ul>
-		</div>
-	</div>
+					<li><img src="images/food-image-2.jpg" alt="Avocado and egg toast."></li>
 
 
-	<div class="second-container">
-		
-			<h2>How It Works</h2>
-		
+					<li><img src="images/food-image-4.jpg" alt="French toast topped with banana slices, blueberries, and maple syrup."></li>
 
-		<div class="second-container-content">
-			<ul>
-				<li><h3>01</h3><h2>Select Your Plan</h2><p>Select a plan that suits your health goals, and select your meals weekly</p></li>
+					<li><img src="images/food-image-5.jpg" alt="Carbonara pasta"></li>
+				</ul>
 
-				<li><h3>02</h3><h2>Delivered to Your Door</h2><p>Chef created meals using fresh local ingredients are delivered to your door</p></li>
-
-				<li><h3>03</h3><h2>Heat and Eat</h2><p>Heat up your nutritious meals in just minutes whenever you're ready to eat</p></li>
-			</ul>
+				<a href="pricing.html" type="button" class="primary-button">OUR PRICING</a>
 		</div>
 
-		<a href="how-it-works.html"><button>LEARN MORE</button></a>
+
 	</div>
 
 			
 	<footer>
 		<p>Copyright reserved by June Shi & Christina Hoang</p>
-		<p><a href="styleguide.html">STYLEGUIDE</a><a href="citations.html">CITATIONS</a><a href="https://github.com/christinaahoangg/secondProject">GIT REPOSITORY</a></p>
+		<a href="styleguide.html">STYLEGUIDE</a>
+		<a href="citations.html">CITATIONS</a>
+		<a href="https://github.com/christinaahoangg/secondProject">GIT REPOSITORY</a>
 	</footer>
 		
 </body>
