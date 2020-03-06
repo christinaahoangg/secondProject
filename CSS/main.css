@@ -17,6 +17,22 @@ body{
 	margin: 5em 0 0 0;
 }
 
+h2{
+	font-family: 'Arial', sans-serif;
+	font-weight:bold;
+	font-size: 4rem;
+	font-weight: 700;
+	padding-top:3rem;
+	padding-left:65px;
+	padding-right: 65px;
+	padding-bottom:2rem;
+	text-align: center;
+}
+
+h3{
+	font-family: 'Arial', sans-serif;
+	font-weight:bold;
+}
 
 a {
 	color: black;
@@ -221,7 +237,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .index-container .index-header .secondary-button {
-	background-color: rgb(129,156,75);
+	background-color: black;
 	color: white;
 	padding: 1em 3em;
 	border: none;
@@ -234,7 +250,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .index-container .index-header .secondary-button:hover, .container .index-header .secondary-button:active, .container .index-header .secondary-button:focus {
-	background-color: black;
+	background-color: rgb(129,156,75);
 	transition: all 0.25s ease-out;
 }
 
@@ -286,7 +302,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 .index-second-container h2{
-	font-size: 1.75em;
+	font-size: 3rem;
 	padding-bottom: 0;
 	margin-left: 0;
 }
@@ -332,6 +348,7 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 
 .index-third-container h2 {
 	margin-left: 0;
+	font-size:1.75em;
 }
 
 .index-third-container ul {
@@ -666,19 +683,11 @@ citation: https://codepen.io/mutedblues/pen/MmPNPG */
 }
 
 
-h2{
-	max-width:450px;
-	font-size: 2em;
-	margin-top:2rem;
-	padding-bottom:2rem;
-	font-weight: 700;
-	align-items: center;
-}
-
 /* HOW IT WORKS */
-.how-main{
-	padding-left:80px;
-	padding-right:80px;
+
+.header-title img{
+	max-width: 100%;
+	height:auto;
 }
 
 .how-section2 h3, .how-section3 h3, .how-section4 h3{
@@ -693,7 +702,7 @@ h2{
 .how-section1{
 	display:flex;
 	flex-direction:row;
-	justify-content:flex-start;
+	justify-content:center;
 	flex-wrap:wrap;
 	align-items:center;
 	padding-bottom: 5rem;
@@ -703,7 +712,6 @@ h2{
 	float:left;
 	max-width:892px;
 	padding-bottom: 2rem;
-	padding-right:3rem;
 }
 
 .how-section1 p{
@@ -714,9 +722,6 @@ h2{
 	list-style:none;
 }
 
-.how-section1 img{
-	max-width: 384px;
-}
 
 /*Citation: center text over an image in flexbox
 https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbox*/
@@ -732,7 +737,8 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 
 .how-section2 img{
 	position:relative;
-	max-width:1280px;
+	max-width:100%;
+	height:auto;
 }
 
 .how-section2 p, .how-section3 p, .how-section4 p{
@@ -784,18 +790,8 @@ https://stackoverflow.com/questions/35871294/center-text-over-an-image-in-flexbo
 	padding-right:3em;
 }
 
-.about-main h2, .how-main h2{
-	margin-left:1rem;
-	padding-top:3rem;
-}
-
 
 /* About */
-
-.about-main{
-	padding-left:50px;
-	padding-right:50px;
-}
 
 .about-content{
 	clear:both;
@@ -1165,16 +1161,6 @@ footer a{
 	} 
 
 
-	h2{
-		font-size: 1.5em;
-		margin-left:2rem;
-	}
-	
-	.how-main{
-		padding-left:10px;
-		padding-right:10px;
-	}
-
 	.how-section2 img{
 		max-width:100%;
 	}
@@ -1205,10 +1191,6 @@ footer a{
 
 
 	/* About */
-	.about-main{
-		padding-left:10px;
-		padding-right:10px;
-	}
 
 	.about-content{
 		flex-direction:column;
@@ -1380,16 +1362,6 @@ footer a{
 		width: auto;
 	}
 
-	h2{
-		padding-bottom:0;
-	}
-
-
-
-	.how-main{
-		padding-left:30px;
-		padding-right:30px;
-	}
 
 	.how-section1 img{
 		max-width: 100%;
@@ -1401,12 +1373,6 @@ footer a{
 		max-width:100%;
 	}
 
-/*	.how-section2 .how-content{
-		position:absolute;
-		max-width:300px;
-		color:black;
-		margin-top:-1em;
-	}*/
 
 	.how-section3 img{
 		max-width:672px;
@@ -1419,10 +1385,6 @@ footer a{
 
 
 	/* About */
-	.about-main{
-		padding-left:30px;
-		padding-right:30px;
-	}
 
 	.about-content{
 		flex-direction:column;
