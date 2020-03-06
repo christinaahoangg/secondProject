@@ -429,6 +429,10 @@ width: 330px;
 	border-radius: 1.25em;
 }
 
+.container-content ul{
+	list-style: none;
+}
+
 .container-content .pricing-card p {
 	color: rgb(205,218,177);
 }
@@ -443,6 +447,41 @@ width: 330px;
 	color: black;
 }
 
+
+.pricing-content{
+	clear:both;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+.pricing-content p{
+	float:left;
+	max-width:70%;
+	padding-bottom:3rem;
+	line-height: 2em;
+}
+
+
+/*events*/
+
+.events-content{
+	clear:both;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+.events-content p{
+	float:left;
+	max-width:70%;
+	padding-bottom:3rem;
+	line-height: 2em;
+}
 
 
 /* LOGIN PAGE */
@@ -1049,6 +1088,7 @@ footer a{
 
 	.container-content ul li {
 		padding-right: 1em;
+
 	}
 
 	.container-content {
@@ -1084,7 +1124,7 @@ footer a{
 
 	.container-content .pricing-card .card-title {
 		font-size: 1.1em;
-		padding-top: 0.5em;
+		padding-top: 1em;
 	}
 
 	.container-content .card-content .card-title {
